@@ -1,0 +1,65 @@
+package struts;
+
+import db.fun.*;
+import db.pojo.*;
+
+import java.util.*;
+import com.opensymphony.xwork2.ActionContext;
+import com.opensymphony.xwork2.ActionSupport;
+import javax.servlet.ServletContext;  
+import javax.servlet.http.HttpServletRequest;  
+import javax.servlet.http.HttpServletResponse;  
+import javax.servlet.http.HttpSession;  
+import org.apache.struts2.ServletActionContext; 
+
+public class ShowProjectOnlyAction extends ActionSupport
+{
+    
+    private ProjectData project;
+    private String projectID;
+
+    
+    public ProjectData getProject()
+    {
+        return project;
+    }
+
+    public void setProject(ProjectData project)
+    {
+        this.project = project;
+    }
+
+
+	
+		
+		public void setProjectID(String projectID)
+		{
+			this.projectID = projectID;
+		}
+		 
+		public String getProjectID()
+		{
+		return this.projectID;
+		}
+			
+		
+		
+ 
+	public String execute()
+	{
+		 //Long l =  Long.parseLong(projectID);
+		     	 
+		      if(!new FunProjectData().checkProjectID(projectID))
+    	  {return "FAIL";}
+		 project = new FunProjectData().showProjectOnly(projectID);
+		 String address=project.getProjectImage();
+		 try{ HttpServletRequest request = ServletActionContext.getRequest();
+     request.setAttribute("project", project);
+     request.setCharacterEncoding("UTF-8");
+     request.setAttribute("address",address);}
+       catch(Exception e)  {
+	    System.out.println("error");}
+	    		 return  "success";
+    }
+
+}

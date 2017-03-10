@@ -1,0 +1,146 @@
+
+#list-main {
+	margin-top: 91px;
+}
+
+#list-sidebar {
+	padding: 0;
+	border: 1px solid #ddd;
+	text-align: center;
+}
+
+#list-sidebar h3 {
+	height: 50px;
+	line-height: 50px;
+	margin: 0;
+	background-color: #DA5E5E;
+	color: #fff;
+}
+
+#list-sidebar a {
+	display: block;
+	height: 50px;
+	background-color: #fff;
+	text-decoration: none;
+}
+
+#list-sidebar a:hover {
+	background-color: rgba(226, 112, 112, 0.8);
+	color: #fff;
+}
+#list-sidebar .list-sidebar-active {
+	background-color: rgba(226, 112, 112, 0.8);
+	color: #fff!important;	
+}
+
+#list-sidebar .list-sidebar-item {
+	height: 50px;
+	line-height: 50px;
+	color: #999;
+	cursor: pointer;
+}
+
+#list-box {
+	background-color: #fff;
+	border: 1px solid #ddd;
+}
+
+
+.list-box-item {
+	//background-color: #fff;
+	//border: 1px solid #ddd;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.list-box-item .list-box-item-img {
+	width: 100%;
+	padding-top: 100%;
+	height: 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.list-box-item .list-box-item-img img {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transfrom: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	width: 100%;
+}
+
+.list-box-item p.number {
+	background: #DA5E5E;
+	color: #fff;
+}
+
+.list-box-item p.project-title {
+	color: #DA5E5E;
+}
+
+.list-box-item .list-box-item-img .overlay {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 0;
+	z-index: 20;
+    background: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 0;
+
+    text-align: center;
+    color: #fff;
+    padding: 30px 15px;
+}
+
+.list-box-item:hover a > .list-box-item-img .overlay {
+	height: 100%;
+	opacity: 1;
+}
+
+
+.list-box-item p.number {
+	margin-top: 10px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+.list-box-item p.project-title {
+	height: 100px;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	/*white-space: nowrap;
+  	overflow: hidden;
+  	text-overflow: ellipsis;*/
+}
+
+
+.list-box-pagination {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.list-box-pagination .pagination .active a{
+	background-color: #DA5E5E;
+	border-color: #DA5E5E;
+	color: white;
+}
+
+.list-box-pagination li a{
+	color: #DA5E5E;
+	cursor: pointer;
+}
+
+.list-box-pagination li a:hover{
+	color: #DA5E5E;
+}
+
+
+
+

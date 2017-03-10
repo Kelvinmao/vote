@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+  
+<hibernate-mapping package="db.pojo"> 
+    <class  name="UserData" table="user_data"> 
+        <id name="UserID"   column="USER_ID">
+        	<generator class="identity"/> 
+        </id> 
+        <property name="UserName"      column="USER_NAME">      </property> 
+        <property name="CardID"        column="CARD_ID">        </property>  
+        <property name="UserPassword"  column="USER_PASSWORD">  </property>  
+        <property name="PollNumber"    column="POLL_NUMBER">    </property>  
+        <property name="UserDatetime"  column="USER_DATETIME">  </property>  
+        <property name="UserLottery"   column="USER_LOTTERY">   </property>  
+        <property name="UserPrize"     column="USER_PRIZE">     </property> 
+        <property name="UserTel"       column="USER_TEL">       </property>  
+        <property name="UserAddress"   column="USER_ADDRESS">   </property>  
+        <property name="IsBUPT"        column="IS_BUPT">        </property>  
+    </class> 
+</hibernate-mapping> 

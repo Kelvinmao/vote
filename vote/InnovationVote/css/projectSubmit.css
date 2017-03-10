@@ -1,0 +1,40 @@
+#submit-main {
+	margin-top: 90px;
+	color: #0080CC;
+}
+
+.submit-box-left-info h1 {
+	font-size: 100px;
+	color: #D6004F;
+	margin-top: 10px;
+	transform:rotate(-5deg);
+	-ms-transform:rotate(-5deg); /* Internet Explorer */
+	-moz-transform:rotate(-5deg); /* Firefox */
+	-webkit-transform:rotate(-5deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-5deg); /* Opera */
+}
+
+.submit-box-left-info h2 {
+	font-size: 50px;
+	color: #E84620;
+	transform:rotate(-5deg);
+	-ms-transform:rotate(-5deg); /* Internet Explorer */
+	-moz-transform:rotate(-5deg); /* Firefox */
+	-webkit-transform:rotate(-5deg); /* Safari 和 Chrome */
+	-o-transform:rotate(-5deg); /* Opera */
+}
+
+.submit-box-left-info img {
+}
+
+.submit-info p {
+	color: red;
+}
+
+.result-error {
+	color: red;
+}
+
+.result-success {
+	color: green;
+}

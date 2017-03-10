@@ -1,0 +1,3171 @@
+五月 11, 2015 3:32:12 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /test.jsp at line 22
+
+19: 	 		int i = list.size();
+20: 	 		for(int j = 0;j <= i;j++ )
+21: 	 		{
+22: 	 		ProjectInfo p =(ProjectInfo)list.get(j);
+23: 	 			%>
+24: 	 				<tr>
+25: 	 					<th>p.getProjectID()</th>
+
+
+Stacktrace:] with root cause
+java.lang.IndexOutOfBoundsException: Index: 10, Size: 10
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:87)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 3:34:10 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+The method getLutorName() is undefined for the type ProjectInfo
+24: 	 				<tr>
+25: 	 					<th><%=p.getProjectID()%></th>
+26: 	 					<th><%=p.getProjectName()%></th>
+27: 	 					<th><%=p.getLutorName()%></th>
+28: 	 					<th><%=p.getVoteName()%></th>	
+29: 	 				</tr>
+30: 	 		   <%  
+
+
+An error occurred at line: 28 in the jsp file: /test.jsp
+The method getVoteName() is undefined for the type ProjectInfo
+25: 	 					<th><%=p.getProjectID()%></th>
+26: 	 					<th><%=p.getProjectName()%></th>
+27: 	 					<th><%=p.getLutorName()%></th>
+28: 	 					<th><%=p.getVoteName()%></th>	
+29: 	 				</tr>
+30: 	 		   <%  
+31:       }  
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+The method getLutorName() is undefined for the type ProjectInfo
+24: 	 				<tr>
+25: 	 					<th><%=p.getProjectID()%></th>
+26: 	 					<th><%=p.getProjectName()%></th>
+27: 	 					<th><%=p.getLutorName()%></th>
+28: 	 					<th><%=p.getVoteName()%></th>	
+29: 	 				</tr>
+30: 	 		   <%  
+
+
+An error occurred at line: 28 in the jsp file: /test.jsp
+The method getVoteName() is undefined for the type ProjectInfo
+25: 	 					<th><%=p.getProjectID()%></th>
+26: 	 					<th><%=p.getProjectName()%></th>
+27: 	 					<th><%=p.getLutorName()%></th>
+28: 	 					<th><%=p.getVoteName()%></th>	
+29: 	 				</tr>
+30: 	 		   <%  
+31:       }  
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 3:34:49 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+The method getLutorName() is undefined for the type ProjectInfo
+24: 	 				<tr>
+25: 	 					<th><%=p.getProjectID()%></th>
+26: 	 					<th><%=p.getProjectName()%></th>
+27: 	 					<th><%=p.getLutorName()%></th>
+28: 	 					<th><%=p.getVoteNum()%></th>	
+29: 	 				</tr>
+30: 	 		   <%  
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+The method getLutorName() is undefined for the type ProjectInfo
+24: 	 				<tr>
+25: 	 					<th><%=p.getProjectID()%></th>
+26: 	 					<th><%=p.getProjectName()%></th>
+27: 	 					<th><%=p.getLutorName()%></th>
+28: 	 					<th><%=p.getVoteNum()%></th>	
+29: 	 				</tr>
+30: 	 		   <%  
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 3:37:00 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /test.jsp at line 22
+
+19: 	 		int i = list.size();
+20: 	 		for(int j = 0;j <= i;j++ )
+21: 	 		{
+22: 	 		ProjectInfo p =(ProjectInfo)list.get(j);
+23: 	 			%>
+24: 	 				<tr>
+25: 	 					<th><%=p.getProjectID()%></th>
+
+
+Stacktrace:] with root cause
+java.lang.IndexOutOfBoundsException: Index: 10, Size: 10
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:87)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 4:28:02 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.IndexOutOfBoundsException: Index: 10, Size: 10] with root cause
+java.lang.IndexOutOfBoundsException: Index: 10, Size: 10
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:87)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 4:29:43 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 22 in the jsp file: /test.jsp
+Syntax error on token "j", delete this token
+19: 	 		int i = list.size();
+20: 	 		for(int j = 0;j <= i;j++ )
+21: 	 		{
+22: 	 		ProjectInfo p[j] =(ProjectInfo)list.get(j);
+23: 	 			%>
+24: 	 				<tr>
+25: 	 					<th><%=p[j].getProjectID()%></th>
+
+
+An error occurred at line: 22 in the jsp file: /test.jsp
+Type mismatch: cannot convert from ProjectInfo to ProjectInfo[]
+19: 	 		int i = list.size();
+20: 	 		for(int j = 0;j <= i;j++ )
+21: 	 		{
+22: 	 		ProjectInfo p[j] =(ProjectInfo)list.get(j);
+23: 	 			%>
+24: 	 				<tr>
+25: 	 					<th><%=p[j].getProjectID()%></th>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 22 in the jsp file: /test.jsp
+Syntax error on token "j", delete this token
+19: 	 		int i = list.size();
+20: 	 		for(int j = 0;j <= i;j++ )
+21: 	 		{
+22: 	 		ProjectInfo p[j] =(ProjectInfo)list.get(j);
+23: 	 			%>
+24: 	 				<tr>
+25: 	 					<th><%=p[j].getProjectID()%></th>
+
+
+An error occurred at line: 22 in the jsp file: /test.jsp
+Type mismatch: cannot convert from ProjectInfo to ProjectInfo[]
+19: 	 		int i = list.size();
+20: 	 		for(int j = 0;j <= i;j++ )
+21: 	 		{
+22: 	 		ProjectInfo p[j] =(ProjectInfo)list.get(j);
+23: 	 			%>
+24: 	 				<tr>
+25: 	 					<th><%=p[j].getProjectID()%></th>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 4:34:14 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 22 in the jsp file: /test.jsp
+Syntax error on token "j", delete this token
+19: 	 		int i = list.size();
+20: 	 		for(int j = 0;j <= i;j++ )
+21: 	 		{
+22: 	 		ProjectInfo p[j] =(ProjectInfo)list.get(j);
+23: 	 			%>
+24: 	 				<tr>
+25: 	 					<th><%=p[j].getProjectID()%></th>
+
+
+An error occurred at line: 22 in the jsp file: /test.jsp
+Type mismatch: cannot convert from ProjectInfo to ProjectInfo[]
+19: 	 		int i = list.size();
+20: 	 		for(int j = 0;j <= i;j++ )
+21: 	 		{
+22: 	 		ProjectInfo p[j] =(ProjectInfo)list.get(j);
+23: 	 			%>
+24: 	 				<tr>
+25: 	 					<th><%=p[j].getProjectID()%></th>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 22 in the jsp file: /test.jsp
+Syntax error on token "j", delete this token
+19: 	 		int i = list.size();
+20: 	 		for(int j = 0;j <= i;j++ )
+21: 	 		{
+22: 	 		ProjectInfo p[j] =(ProjectInfo)list.get(j);
+23: 	 			%>
+24: 	 				<tr>
+25: 	 					<th><%=p[j].getProjectID()%></th>
+
+
+An error occurred at line: 22 in the jsp file: /test.jsp
+Type mismatch: cannot convert from ProjectInfo to ProjectInfo[]
+19: 	 		int i = list.size();
+20: 	 		for(int j = 0;j <= i;j++ )
+21: 	 		{
+22: 	 		ProjectInfo p[j] =(ProjectInfo)list.get(j);
+23: 	 			%>
+24: 	 				<tr>
+25: 	 					<th><%=p[j].getProjectID()%></th>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:00:31 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /test.jsp at line 23
+
+20: 	 		out.print(i);
+21: 	 		for(int j = 0;j <= i;j++ )
+22: 	 		{
+23: 	 		ProjectInfo p =(ProjectInfo)list.get(j);
+24: 	 		out.print(p.getProjectID());
+25: 	 		
+26:       }  
+
+
+Stacktrace:] with root cause
+java.lang.IndexOutOfBoundsException: Index: 10, Size: 10
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:88)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:02:02 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+The method getProjectID() is undefined for the type Object
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%=(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%=(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%=(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%=(ProjectInfo)list.get(j).getVoteNum()%></th>	
+
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+The method getProjectName() is undefined for the type Object
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%=(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%=(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%=(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%=(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+
+
+An error occurred at line: 28 in the jsp file: /test.jsp
+The method getTutorName() is undefined for the type Object
+25: 	 				<tr>
+26: 	 					<th><%=(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%=(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%=(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%=(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+
+
+An error occurred at line: 29 in the jsp file: /test.jsp
+The method getVoteNum() is undefined for the type Object
+26: 	 					<th><%=(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%=(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%=(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%=(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+32:       }  
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+The method getProjectID() is undefined for the type Object
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%=(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%=(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%=(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%=(ProjectInfo)list.get(j).getVoteNum()%></th>	
+
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+The method getProjectName() is undefined for the type Object
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%=(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%=(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%=(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%=(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+
+
+An error occurred at line: 28 in the jsp file: /test.jsp
+The method getTutorName() is undefined for the type Object
+25: 	 				<tr>
+26: 	 					<th><%=(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%=(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%=(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%=(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+
+
+An error occurred at line: 29 in the jsp file: /test.jsp
+The method getVoteNum() is undefined for the type Object
+26: 	 					<th><%=(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%=(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%=(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%=(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+32:       }  
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:02:28 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+ProjectInfo cannot be resolved to a variable
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+The method getProjectID() is undefined for the type Object
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+ProjectInfo cannot be resolved to a variable
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+The method getProjectName() is undefined for the type Object
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+
+
+An error occurred at line: 28 in the jsp file: /test.jsp
+ProjectInfo cannot be resolved to a variable
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+
+
+An error occurred at line: 28 in the jsp file: /test.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+
+
+An error occurred at line: 28 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+
+
+An error occurred at line: 28 in the jsp file: /test.jsp
+The method getTutorName() is undefined for the type Object
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+
+
+An error occurred at line: 28 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+
+
+An error occurred at line: 29 in the jsp file: /test.jsp
+ProjectInfo cannot be resolved to a variable
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+32:       }  
+
+
+An error occurred at line: 29 in the jsp file: /test.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+32:       }  
+
+
+An error occurred at line: 29 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+32:       }  
+
+
+An error occurred at line: 29 in the jsp file: /test.jsp
+The method getVoteNum() is undefined for the type Object
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+32:       }  
+
+
+An error occurred at line: 29 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+32:       }  
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+ProjectInfo cannot be resolved to a variable
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+The method getProjectID() is undefined for the type Object
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+ProjectInfo cannot be resolved to a variable
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+The method getProjectName() is undefined for the type Object
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+
+
+An error occurred at line: 28 in the jsp file: /test.jsp
+ProjectInfo cannot be resolved to a variable
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+
+
+An error occurred at line: 28 in the jsp file: /test.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+
+
+An error occurred at line: 28 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+
+
+An error occurred at line: 28 in the jsp file: /test.jsp
+The method getTutorName() is undefined for the type Object
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+
+
+An error occurred at line: 28 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+25: 	 				<tr>
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+
+
+An error occurred at line: 29 in the jsp file: /test.jsp
+ProjectInfo cannot be resolved to a variable
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+32:       }  
+
+
+An error occurred at line: 29 in the jsp file: /test.jsp
+Syntax error, insert "AssignmentOperator Expression" to complete Assignment
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+32:       }  
+
+
+An error occurred at line: 29 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+32:       }  
+
+
+An error occurred at line: 29 in the jsp file: /test.jsp
+The method getVoteNum() is undefined for the type Object
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+32:       }  
+
+
+An error occurred at line: 29 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+26: 	 					<th><%(ProjectInfo)list.get(j).getProjectID()%></th>
+27: 	 					<th><%(ProjectInfo)list.get(j).getProjectName()%></th>
+28: 	 					<th><%(ProjectInfo)list.get(j).getTutorName()%></th>
+29: 	 					<th><%(ProjectInfo)list.get(j).getVoteNum()%></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+32:       }  
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:03:41 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+The method getProjectID() is undefined for the type Object
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%=(ProjectInfo)list.get(j).getProjectID() %></th>
+27: 	 					<th><%=(ProjectInfo)list.get(j).getProjectName() %></th>
+28: 	 					<th><%=(ProjectInfo)list.get(j).getTutorName() %></th>
+29: 	 					<th><%=(ProjectInfo)list.get(j).getVoteNum() %></th>	
+
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+The method getProjectName() is undefined for the type Object
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%=(ProjectInfo)list.get(j).getProjectID() %></th>
+27: 	 					<th><%=(ProjectInfo)list.get(j).getProjectName() %></th>
+28: 	 					<th><%=(ProjectInfo)list.get(j).getTutorName() %></th>
+29: 	 					<th><%=(ProjectInfo)list.get(j).getVoteNum() %></th>	
+30: 	 				</tr>
+
+
+An error occurred at line: 28 in the jsp file: /test.jsp
+The method getTutorName() is undefined for the type Object
+25: 	 				<tr>
+26: 	 					<th><%=(ProjectInfo)list.get(j).getProjectID() %></th>
+27: 	 					<th><%=(ProjectInfo)list.get(j).getProjectName() %></th>
+28: 	 					<th><%=(ProjectInfo)list.get(j).getTutorName() %></th>
+29: 	 					<th><%=(ProjectInfo)list.get(j).getVoteNum() %></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+
+
+An error occurred at line: 29 in the jsp file: /test.jsp
+The method getVoteNum() is undefined for the type Object
+26: 	 					<th><%=(ProjectInfo)list.get(j).getProjectID() %></th>
+27: 	 					<th><%=(ProjectInfo)list.get(j).getProjectName() %></th>
+28: 	 					<th><%=(ProjectInfo)list.get(j).getTutorName() %></th>
+29: 	 					<th><%=(ProjectInfo)list.get(j).getVoteNum() %></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+32:       }  
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+The method getProjectID() is undefined for the type Object
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%=(ProjectInfo)list.get(j).getProjectID() %></th>
+27: 	 					<th><%=(ProjectInfo)list.get(j).getProjectName() %></th>
+28: 	 					<th><%=(ProjectInfo)list.get(j).getTutorName() %></th>
+29: 	 					<th><%=(ProjectInfo)list.get(j).getVoteNum() %></th>	
+
+
+An error occurred at line: 27 in the jsp file: /test.jsp
+The method getProjectName() is undefined for the type Object
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<th><%=(ProjectInfo)list.get(j).getProjectID() %></th>
+27: 	 					<th><%=(ProjectInfo)list.get(j).getProjectName() %></th>
+28: 	 					<th><%=(ProjectInfo)list.get(j).getTutorName() %></th>
+29: 	 					<th><%=(ProjectInfo)list.get(j).getVoteNum() %></th>	
+30: 	 				</tr>
+
+
+An error occurred at line: 28 in the jsp file: /test.jsp
+The method getTutorName() is undefined for the type Object
+25: 	 				<tr>
+26: 	 					<th><%=(ProjectInfo)list.get(j).getProjectID() %></th>
+27: 	 					<th><%=(ProjectInfo)list.get(j).getProjectName() %></th>
+28: 	 					<th><%=(ProjectInfo)list.get(j).getTutorName() %></th>
+29: 	 					<th><%=(ProjectInfo)list.get(j).getVoteNum() %></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+
+
+An error occurred at line: 29 in the jsp file: /test.jsp
+The method getVoteNum() is undefined for the type Object
+26: 	 					<th><%=(ProjectInfo)list.get(j).getProjectID() %></th>
+27: 	 					<th><%=(ProjectInfo)list.get(j).getProjectName() %></th>
+28: 	 					<th><%=(ProjectInfo)list.get(j).getTutorName() %></th>
+29: 	 					<th><%=(ProjectInfo)list.get(j).getVoteNum() %></th>	
+30: 	 				</tr>
+31: 	 		   <%  
+32:       }  
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:08:07 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+The method getNid() is undefined for the type Object
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(j).getNid() %></td>
+27: 	 				
+28: 	 				</tr>
+29: 	 		   <%  
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+The method getNid() is undefined for the type Object
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(j).getNid() %></td>
+27: 	 				
+28: 	 				</tr>
+29: 	 		   <%  
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:08:45 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+The method getProjectID() is undefined for the type Object
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(j).getProjectID() %></td>
+27: 	 			
+28: 	 				</tr>
+29: 	 		   <%  
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 26 in the jsp file: /test.jsp
+The method getProjectID() is undefined for the type Object
+23: 	 		
+24: 	 			%>
+25: 	 				<tr>
+26: 	 					<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(j).getProjectID() %></td>
+27: 	 			
+28: 	 				</tr>
+29: 	 		   <%  
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:09:42 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+Syntax error, insert ">" to complete ReferenceType1
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+Syntax error, insert "super ( ) ;" to complete Statement
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+td cannot be resolved to a type
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+Constructor call must be the first statement in a constructor
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+bgcolor cannot be resolved to a variable
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+The operator > is undefined for the argument type(s) String, ProjectInfo
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+Syntax error on tokens, delete these tokens
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+The method getProjectID() is undefined for the type Object
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+Syntax error, insert ">" to complete ReferenceType1
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+Syntax error, insert "super ( ) ;" to complete Statement
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+td cannot be resolved to a type
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+Constructor call must be the first statement in a constructor
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+bgcolor cannot be resolved to a variable
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+The operator > is undefined for the argument type(s) String, ProjectInfo
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+Syntax error on tokens, delete these tokens
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+The method getProjectID() is undefined for the type Object
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+An error occurred at line: 21 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete Statement
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+22:       %>  	
+23: 	 	</table>
+24:   </center>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:10:23 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 22 in the jsp file: /test.jsp
+The method getProjectID() is undefined for the type Object
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		%>
+22: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+23: 	 	</table>
+24:   </center>
+25:   </body>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 22 in the jsp file: /test.jsp
+The method getProjectID() is undefined for the type Object
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		%>
+22: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+23: 	 	</table>
+24:   </center>
+25:   </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:10:28 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 22 in the jsp file: /test.jsp
+The method getProjectID() is undefined for the type Object
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		%>
+22: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+23: 	 	</table>
+24:   </center>
+25:   </body>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 22 in the jsp file: /test.jsp
+The method getProjectID() is undefined for the type Object
+19: 	 		int i = list.size();
+20: 	 		out.print(i);
+21: 	 		%>
+22: 	 		<td bgcolor="#6C6C6C"><%=(ProjectInfo)list.get(0).getProjectID() %></td>
+23: 	 	</table>
+24:   </center>
+25:   </body>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:18:44 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 20 in the jsp file: /test.jsp
+The method printf(String, int) is undefined for the type JspWriter
+17: 	 		<%
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.printf("%d",i);
+21: 	 		for(int j = 0;j <= i;j++)
+22: 	 		{
+23: 	 		ProjectInfo p = (ProjectInfo)list.get(j);
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 20 in the jsp file: /test.jsp
+The method printf(String, int) is undefined for the type JspWriter
+17: 	 		<%
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.printf("%d",i);
+21: 	 		for(int j = 0;j <= i;j++)
+22: 	 		{
+23: 	 		ProjectInfo p = (ProjectInfo)list.get(j);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:19:12 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 20 in the jsp file: /test.jsp
+The method printf(String, int) is undefined for the type JspWriter
+17: 	 		<%
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.printf("%d\n",i);
+21: 	 		for(int j = 0;j <= i;j++)
+22: 	 		{
+23: 	 		ProjectInfo p = (ProjectInfo)list.get(j);
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 20 in the jsp file: /test.jsp
+The method printf(String, int) is undefined for the type JspWriter
+17: 	 		<%
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.printf("%d\n",i);
+21: 	 		for(int j = 0;j <= i;j++)
+22: 	 		{
+23: 	 		ProjectInfo p = (ProjectInfo)list.get(j);
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:24:35 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 20 in the jsp file: /test.jsp
+The method printf(String, int) is undefined for the type JspWriter
+17: 	 		<%
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.printf("%d",i);
+21: 	 		ProjectInfo[] p ;  
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Duplicate local variable p
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Syntax error on token "j", delete this token
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Type mismatch: cannot convert from ProjectInfo to ProjectInfo[]
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 20 in the jsp file: /test.jsp
+The method printf(String, int) is undefined for the type JspWriter
+17: 	 		<%
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.printf("%d",i);
+21: 	 		ProjectInfo[] p ;  
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Duplicate local variable p
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Syntax error on token "j", delete this token
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Type mismatch: cannot convert from ProjectInfo to ProjectInfo[]
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:24:53 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 20 in the jsp file: /test.jsp
+The method print(int) in the type JspWriter is not applicable for the arguments (String, int)
+17: 	 		<%
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print("%d",i);
+21: 	 		ProjectInfo[] p ;  
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Duplicate local variable p
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Syntax error on token "j", delete this token
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Type mismatch: cannot convert from ProjectInfo to ProjectInfo[]
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 20 in the jsp file: /test.jsp
+The method print(int) in the type JspWriter is not applicable for the arguments (String, int)
+17: 	 		<%
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print("%d",i);
+21: 	 		ProjectInfo[] p ;  
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Duplicate local variable p
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Syntax error on token "j", delete this token
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Type mismatch: cannot convert from ProjectInfo to ProjectInfo[]
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:25:52 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 20 in the jsp file: /test.jsp
+The method print(int) in the type JspWriter is not applicable for the arguments (String, int)
+17: 	 		<%
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print("%d",i);
+21: 
+22: 	 		%>
+23: 	 	</table>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 20 in the jsp file: /test.jsp
+The method print(int) in the type JspWriter is not applicable for the arguments (String, int)
+17: 	 		<%
+18: 	 		List list = new FunUser().showProjectVote(0,10);
+19: 	 		int i = list.size();
+20: 	 		out.print("%d",i);
+21: 
+22: 	 		%>
+23: 	 	</table>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:26:25 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Duplicate local variable p
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Syntax error on token "j", delete this token
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Type mismatch: cannot convert from ProjectInfo to ProjectInfo[]
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Duplicate local variable p
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Syntax error on token "j", delete this token
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+An error occurred at line: 25 in the jsp file: /test.jsp
+Type mismatch: cannot convert from ProjectInfo to ProjectInfo[]
+22:       p = new ProjectInfo[10] ; 
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		ProjectInfo p[j] = (ProjectInfo)list.get(j);
+26: 	 		out.print(p[j].getProjectID());
+27: 	 		out.print(p[j].getProjectName());
+28: 	 		out.print(p[j].getTutorName());
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:32:55 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /test.jsp at line 26
+
+23: 	 		for(int j = 0;j <= i;j++)
+24: 	 		{
+25: 	 		%><br/>
+26: 	 		<%p[j] = (ProjectInfo)list.get(j);%><br/>
+27: 	 		<%out.print(p[j].getProjectID());%><br/>
+28: 	 		<%out.print(p[j].getProjectName());%><br/>
+29: 	 		<%out.print(p[j].getTutorName());%><br/>
+
+
+Stacktrace:] with root cause
+java.lang.IndexOutOfBoundsException: Index: 10, Size: 10
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:93)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:50:56 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /test.jsp at line 26
+
+23: 	 		for(int j = 0;j <= i;j++)
+24: 	 		{
+25: 	 		%><br/>
+26: 	 		<%p[j] = (ProjectInfo)list.get(j);%><br/>
+27: 	 		<%out.print(p[j].getProjectID());%><br/>
+28: 	 		<%out.print(p[j].getProjectName());%><br/>
+29: 	 		<%out.print(p[j].getTutorName());%><br/>
+
+
+Stacktrace:] with root cause
+java.lang.ArrayIndexOutOfBoundsException: 10
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:93)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:51:09 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /test.jsp at line 26
+
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		%><br/>
+26: 	 		<%p[j] = (ProjectInfo)list.get(j);%><br/>
+27: 	 		<%out.print(p[j].getProjectID());%><br/>
+28: 	 		<%out.print(p[j].getProjectName());%><br/>
+29: 	 		<%out.print(p[j].getTutorName());%><br/>
+
+
+Stacktrace:] with root cause
+java.lang.ArrayIndexOutOfBoundsException: 10
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:93)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 5:51:15 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /test.jsp at line 26
+
+23: 	 		for(int j = 0;j < i;j++)
+24: 	 		{
+25: 	 		%><br/>
+26: 	 		<%p[j] = (ProjectInfo)list.get(j);%><br/>
+27: 	 		<%out.print(p[j].getProjectID());%><br/>
+28: 	 		<%out.print(p[j].getProjectName());%><br/>
+29: 	 		<%out.print(p[j].getTutorName());%><br/>
+
+
+Stacktrace:] with root cause
+java.lang.ArrayIndexOutOfBoundsException: 10
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:93)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 6:25:53 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 14 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+11: 	 		<%
+12: 	 		String u = "2013210095";
+13: 	 		Long l = new Long(21);
+14: 	 		String p = "10.123.2.3.2"
+15: 	 		int i = new  Test().vote(l,u,p);
+16: 	 		out.print(i);
+17: 	 		%>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 14 in the jsp file: /test.jsp
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+11: 	 		<%
+12: 	 		String u = "2013210095";
+13: 	 		Long l = new Long(21);
+14: 	 		String p = "10.123.2.3.2"
+15: 	 		int i = new  Test().vote(l,u,p);
+16: 	 		out.print(i);
+17: 	 		%>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 8:31:28 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /test.jsp at line 15
+
+12: 	 		String u = "2013210095";
+13: 	 		Long l = new Long(21);
+14: 	 		UserData i = new  Test().vote(l,u);
+15: 	 		out.print(i.getOutID());
+16: 	 		%>
+17: 	 	</table>
+18:   </center>
+
+
+Stacktrace:] with root cause
+java.lang.NullPointerException
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:80)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 8:37:22 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /test.jsp at line 15
+
+12: 	 		String u = "2013210095";
+13: 	 		Long l = new Long(21);
+14: 	 		UserData i = new  Test().vote(l,u);
+15: 	 		out.print(i.getName());
+16: 	 		%>
+17: 	 	</table>
+18:   </center>
+
+
+Stacktrace:] with root cause
+java.lang.NullPointerException
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:80)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 9:35:34 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 13 in the jsp file: /test.jsp
+The method Function2() is undefined for the type test_jsp
+10: 	 	<table>
+11: 	 		<%
+12: 	 		String u = "2013210095";
+13: 	 		int i =  Function2().ifUserID(u);
+14: 	 		out.print(i);
+15: 	 		%>
+16: 	 	</table>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 13 in the jsp file: /test.jsp
+The method Function2() is undefined for the type test_jsp
+10: 	 	<table>
+11: 	 		<%
+12: 	 		String u = "2013210095";
+13: 	 		int i =  Function2().ifUserID(u);
+14: 	 		out.print(i);
+15: 	 		%>
+16: 	 	</table>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 9:36:02 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 13 in the jsp file: /test.jsp
+The method Function2() is undefined for the type test_jsp
+10: 	 	<table>
+11: 	 		<%
+12: 	 		String u = "2013210095";
+13: 	 		boolean i =  Function2().ifUserID(u);
+14: 	 		out.print(i);
+15: 	 		%>
+16: 	 	</table>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 13 in the jsp file: /test.jsp
+The method Function2() is undefined for the type test_jsp
+10: 	 	<table>
+11: 	 		<%
+12: 	 		String u = "2013210095";
+13: 	 		boolean i =  Function2().ifUserID(u);
+14: 	 		out.print(i);
+15: 	 		%>
+16: 	 	</table>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 9:36:08 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 13 in the jsp file: /test.jsp
+The method Function2() is undefined for the type test_jsp
+10: 	 	<table>
+11: 	 		<%
+12: 	 		String u = "2013210095";
+13: 	 		boolean i =  Function2().ifUserID(u);
+14: 	 		out.print(i);
+15: 	 		%>
+16: 	 	</table>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 13 in the jsp file: /test.jsp
+The method Function2() is undefined for the type test_jsp
+10: 	 	<table>
+11: 	 		<%
+12: 	 		String u = "2013210095";
+13: 	 		boolean i =  Function2().ifUserID(u);
+14: 	 		out.print(i);
+15: 	 		%>
+16: 	 	</table>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 9:38:19 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 13 in the jsp file: /test.jsp
+The method Function2() is undefined for the type test_jsp
+10: 	 	<table>
+11: 	 		<%
+12: 	 		String u = "2013210095";
+13: 	 		boolean i =  Function2().ifUserID(u);
+14: 	 		out.print(i);
+15: 	 		%>
+16: 	 	</table>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 13 in the jsp file: /test.jsp
+The method Function2() is undefined for the type test_jsp
+10: 	 	<table>
+11: 	 		<%
+12: 	 		String u = "2013210095";
+13: 	 		boolean i =  Function2().ifUserID(u);
+14: 	 		out.print(i);
+15: 	 		%>
+16: 	 	</table>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 9:38:22 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /test.jsp at line 15
+
+12: 	 		String u = "2013210095";
+13: 	 		boolean i =  Function2().ifUserID(u);
+14: 	 		out.print(i);
+15: 	 		%>
+16: 	 	</table>
+17:   </center>
+18:   </body>
+
+
+Stacktrace:] with root cause
+java.lang.NullPointerException
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:80)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 9:39:12 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 13 in the jsp file: /test.jsp
+The method Function2() is undefined for the type test_jsp
+10: 	 	<table>
+11: 	 		<%
+12: 	 		String u = "2013210095";
+13: 	 		boolean i =  Function2().ifUserID(u);
+14: 	 		if(i)
+15: 	 		out.print(u);
+16: 	 		%>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 13 in the jsp file: /test.jsp
+The method Function2() is undefined for the type test_jsp
+10: 	 	<table>
+11: 	 		<%
+12: 	 		String u = "2013210095";
+13: 	 		boolean i =  Function2().ifUserID(u);
+14: 	 		if(i)
+15: 	 		out.print(u);
+16: 	 		%>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 9:39:15 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /test.jsp at line 15
+
+12: 	 		String u = "2013210095";
+13: 	 		boolean i =  Function2().ifUserID(u);
+14: 	 		if(i)
+15: 	 		out.print(u);
+16: 	 		%>
+17: 	 	</table>
+18:   </center>
+
+
+Stacktrace:] with root cause
+java.lang.NullPointerException
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:80)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 10:05:37 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 14 in the jsp file: /test.jsp
+The method ifUserID(int) in the type IfUserID is not applicable for the arguments (Long)
+11: 	 		<%
+12: 	 		String u = "2013210100";
+13: 	 		Long l = new Long(21);
+14: 	 		int i = new IfUserID().ifUserID(l);
+15: 	 		out.print(i);
+16: 	 		%>
+17: 	 	</table>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 14 in the jsp file: /test.jsp
+The method ifUserID(int) in the type IfUserID is not applicable for the arguments (Long)
+11: 	 		<%
+12: 	 		String u = "2013210100";
+13: 	 		Long l = new Long(21);
+14: 	 		int i = new IfUserID().ifUserID(l);
+15: 	 		out.print(i);
+16: 	 		%>
+17: 	 	</table>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 11, 2015 10:06:36 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 14 in the jsp file: /test.jsp
+The method ifUserID(int) in the type IfUserID is not applicable for the arguments (Long)
+11: 	 		<%
+12: 	 		String u = "2013210100";
+13: 	 		Long l = new Long(21);
+14: 	 		int i = new IfUserID().ifUserID(l);
+15: 	 		out.print(i);
+16: 	 		%>
+17: 	 	</table>
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 14 in the jsp file: /test.jsp
+The method ifUserID(int) in the type IfUserID is not applicable for the arguments (Long)
+11: 	 		<%
+12: 	 		String u = "2013210100";
+13: 	 		Long l = new Long(21);
+14: 	 		int i = new IfUserID().ifUserID(l);
+15: 	 		out.print(i);
+16: 	 		%>
+17: 	 	</table>
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+

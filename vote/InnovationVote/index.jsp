@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>大创展投票系统</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <!-- siimple style -->
+    <link href="css/vegas.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style type="text/css">
+    body {
+        background-color: #f6f6f6;
+    }
+    
+    #logo-text,
+    #login {
+        color: #ffffff;
+        font-size: 20px;
+    }
+    
+    #logo {
+        padding-top: 5px;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" id="logo" href="index.jsp"><img src="images/logo.png" weight="48px" height="48px" /></a>
+                <p class="navbar-text" id="logo-text">InnovationCamp</p>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="login.jsp" id="login">我要提交项目</a></li>      <!--@wangyang-->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+    <div class="container" style="">
+      <div class="row main" style="margin-top: 100px">
+        <div class="col-lg-4 col-lg-offset-8" style="text-align: center;">
+          <img class="col-lg-12" src="images/win-2.png" id="WIN-2">
+          <h2>大创展投票系统</h2>
+          <button type="button" class="btn btn-info btn-block btn-lg" onclick="window.location.href='projectSearch.action'">我要投票</button>
+          <br/>
+          <button type="button" class="btn btn-info btn-block btn-lg" onclick="window.location.href='voteresult.jsp'">投票排名</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/vegas.min.js"></script>
+  	<script src="js/index.js"></script>
+  	<script type="text/javascript">
+  	$(document).ready(function() {
+   	 $('body').vegas({
+   	  	 slides: [{
+    	    src: "images/BG1.jpg"
+   	   	}, {
+    	    src: "images/BG2.jpg"
+     	 	}, {
+    	    src: "images/BG3.jpg"
+    	  }, {
+     		   src: "images/BG4.jpg"
+    	  }],
+     	 timer: false,
+     	 transition: 'random',
+     	 delay: 6000
+    	})
+  })
+  </script>
+</body>
+
+</html>

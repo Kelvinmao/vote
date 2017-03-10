@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+  
+<hibernate-mapping package="db.pojo"> 
+    <class  name="LotteryData" table="lottery_data"> 
+        <id name="LotteryID"   column="LOTTERY_ID">
+        	<generator class="identity"/> 
+        </id>  
+        <property name="UserID"       column="USER_ID">       </property> 
+        <property name="LotteryTime"  column="LOTTERY_TIME">  </property> 
+        <property name="LotteryIP"    column="LOTTERY_IP">    </property> 
+        <property name="UserPrize"    column="USER_PRIZE">    </property>
+        <property name="UserName"    column="USER_NAME">    </property>
+        <property name="UserAddress"    column="USER_Address">    </property> 
+        <property name="UserTel"    column="USER_Tel">    </property>     
+    </class> 
+</hibernate-mapping> 

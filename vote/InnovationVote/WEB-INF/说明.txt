@@ -1,0 +1,2 @@
+showProjectVoteAction.action      显示项目票数信息（分页列表）
+showProjectInfoSearchAction       显示项目搜索结果（分页列表）

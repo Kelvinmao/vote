@@ -1,0 +1,2 @@
+ProjectVote与ProjectInfoSearch 功能重复
+ProjectVoteAction与Vote重复

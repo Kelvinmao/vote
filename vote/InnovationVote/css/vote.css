@@ -1,0 +1,258 @@
+	.BODY_D
+	{
+		background:				#cbc19f;
+	}
+
+	.BODY_S
+	{
+		background:				#C7C4A3;
+	}
+	.BODY_O
+	{
+		background:				#C7C4A3;
+	}
+	.input_button
+	{
+		background-color:				transparent;
+		color:							white;
+		font-size:						14pt;
+		ime-mode:						active;
+		cursor:							hand;
+		position:						relative;
+		left:							15%;
+		width:							70px;
+		font-family:					"Ó×Ô²";
+
+	}
+	.clear_button
+	{
+		background-color:				transparent;
+		color:							white;
+		font-size:						14pt;
+		ime-mode:						active;
+		cursor:							hand;
+		position:						relative;
+		left:							40%;
+		width:							70px;
+		font-family:					"Ó×Ô²";
+	}
+	.jump_button
+	{
+		background-color:				transparent;
+		color:							midnightblue;
+		font-size:						12pt;
+		cursor:							hand;
+		width:							50px;
+		height:							22px;
+		border-style:					ridge ;
+		font-family:					"Á¥Êé";
+	}
+	.Login_input_button
+	{
+		background-color:				transparent;
+		color:							white;
+		font-size:						14pt;
+		ime-mode:						active;
+		cursor:							hand;
+		position:						relative;
+		left:							15%;
+		width:							70px;
+		font-family:					"Ó×Ô²";
+
+	}
+	.Login_clear_button
+	{
+		background-color:				transparent;
+		color:							white;
+		font-size:						14pt;
+		ime-mode:						active;
+		cursor:							hand;
+		position:						relative;
+		left:							40%;
+		width:							70px;
+		font-family:					"Ó×Ô²";
+	}
+
+	.label_PageInfo
+	{
+		background-color:				transparent;
+		color:							midnightblue;
+		font-size:						12pt;
+		border-style:					none ;
+		width:							600px;
+		text-align:						center;
+		font-family:					"Á¥Êé";
+	}
+
+	.Table_List
+	{
+		border-style:					double;
+		width:							95%;
+		border-width:					1px;
+		border-style:					double;
+		border-color:					#063282;
+		border-collapse:				collapse;
+	}
+	.Table_Head_TR
+	{
+		background-color:				#C7D3F6;
+	}
+	.Table_Head_TD
+	{
+		background-color:				#C7D3F6;
+		color:							#062661;
+		font-size:						12px;
+		border-width:					2px;
+		border-style:					ridge;
+		border-color:					#063282;
+	}
+	.Table_TR
+	{
+		background-color:				#7D9F9D;
+	}
+	.Table_TD
+	{
+		font-size:						12px;
+		border-width:					1px;
+		border-style:					groove;
+		border-color:					#063282;
+	}
+
+	.Table_Title
+	{
+		border-color:					pink;
+		width:							95%;
+		border-width:					1px;
+		border-style:					dashed;
+		color:							"#FC8403";
+		font-size:						18px;
+	}
+
+	.Table_Every
+	{
+		background-color:				#E6E8B9;
+		border-style:					double;
+		width:							85%;
+		border-width:					2px;
+		border-style:					double;
+		border-color:					#CC2B6B;
+		border-collapse:				collapse;
+		color:							#7C8D65;
+	}
+
+	.Every_Title
+	{
+		border-color:					gold;
+		width:							95%;
+		border-width:					1px;
+		border-style:					dashed;
+		color:							"#FC8403";
+		font-size:						18px;
+	}
+
+	.Table_TDComent
+	{
+		left:							0px;
+		position:						relative;
+		font-size:						16px;
+		background-color:				transparent;
+		border-width:					1px;
+		border-style:					groove;
+		border-color:					#063282;
+		color: 							#311375;
+	}
+	.Table_TDData
+	{
+		left:							0px;
+		position:						relative;
+		font-size:						16px;
+		background-color:				transparent;
+		border-width:					1px;
+		border-style:					groove;
+		border-color:					#063282;
+		color: 							#3D3129;
+	}
+	
+	.Every_Close_Button
+	{
+		width:							80px;
+		background-color:				transparent;
+		font-size:						16px;
+		font-family:					"»ªÎÄ²ÊÔÆ";
+		color:							black;
+		border-style:					outset;
+		filter: 						Shadow(color=silver,direction=135,strength=5);
+	}
+	
+	.Sort_Label_Caption
+	{
+		right:							20px;
+		position:						relative;
+		font-size:						16px;
+		background-color:				transparent;
+		width:							40%;
+		color: 							white;
+		filter: 						Glow(color=darkslategray,strength=5);
+	}
+
+	.Sort_Title
+	{
+		border-color:					#8835AC;
+		width:							75%;
+		border-width:					1px;
+		border-style:					dashed;
+		color:							"#FC8403";
+		font-size:						18px;
+	}
+
+	.Sort_Item
+	{
+		left:							20px;
+		position:						relative;
+		font-size:						15px;
+		width:							180px;
+		background-color:				"#AEC8A2";
+		color: 							#5268E9;
+	}
+
+	.Sort_TD
+	{
+		position:						relative;
+		font-size:						15px;
+		background-color:				transparent;
+		width:							60%;
+		color: 							white;
+	}
+
+	.Sort_Button
+	{
+		width:							80px;
+		background-color:				transparent;
+		font-size:						16px;
+		font-family:					"»ªÎÄ²ÊÔÆ";
+		color:							black;
+		border-style:					outset;
+		filter: 						Shadow(color=silver,direction=135,strength=5);
+	}
+
+	.Sort_CheckBox
+	{
+		left:							20px;
+		position:						relative;
+		font-size:						15px;
+		width:							180px;
+		background-color:				transparent;
+		color: 							white;
+	}
+
+	.Export_Data
+	{
+		width:							95%;
+		background-color:				transparent;
+		color:							midnightblue;
+		font-size:						12pt;
+		cursor:							hand;
+		width:							50px;
+		height:							22px;
+		font-family:					"Á¥Êé";
+	}

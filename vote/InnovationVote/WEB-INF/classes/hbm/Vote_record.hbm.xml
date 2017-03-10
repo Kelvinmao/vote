@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+  
+<hibernate-mapping package="db.pojo"> 
+    <class name="VoteRecord" table="vote_record"> 
+        <id name="VoteID" column="VOTE_ID">
+        	<generator class="identity"/> 
+        </id> 
+        <property name="OutID" column="OUT_ID"></property> 
+        <property name="ProjectID" column="PROJECT_ID"></property> 
+        <property name="Checked" column="CHECKED"></property> 
+        <property name="UserIP" column="USER_IP"></property> 
+        <property name="InnerSchool" column="INNER_SCHOOL"></property> 
+    </class> 
+</hibernate-mapping> 

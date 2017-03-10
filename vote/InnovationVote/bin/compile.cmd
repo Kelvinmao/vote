@@ -1,0 +1,1 @@
+@javac -d %VOTE_HOME%\classes\ %1

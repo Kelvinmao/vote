@@ -1,0 +1,1538 @@
+五月 10, 2015 6:11:12 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.59
+五月 10, 2015 6:11:13 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Jan 28 2015 15:51:10 UTC
+五月 10, 2015 6:11:13 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.59.0
+五月 10, 2015 6:11:13 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 7
+五月 10, 2015 6:11:13 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.1
+五月 10, 2015 6:11:13 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          x86
+五月 10, 2015 6:11:13 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             C:\vote\jdk1.8\jre
+五月 10, 2015 6:11:13 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_40-b25
+五月 10, 2015 6:11:13 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+五月 10, 2015 6:11:13 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         C:\vote\Tomcat
+五月 10, 2015 6:11:13 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         C:\vote\Tomcat
+五月 10, 2015 6:11:13 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=C:\vote\Tomcat\conf\logging.properties
+五月 10, 2015 6:11:13 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+五月 10, 2015 6:11:13 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=C:\vote\Tomcat\endorsed
+五月 10, 2015 6:11:13 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=C:\vote\Tomcat
+五月 10, 2015 6:11:13 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=C:\vote\Tomcat
+五月 10, 2015 6:11:13 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=C:\vote\Tomcat\temp
+五月 10, 2015 6:11:13 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\vote\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\vote\jdk1.8\bin;C:\vote\InnovationVote\WEB-INF\bin;;%MYSQL_HOME%\bin;C:\jdk5.0\bin;C:\jdk5.0\jre\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\vote;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows7Master;D:\Python27\;C:\MATLAB7\bin\win32;;E:\sq anywhere\win32;E:\Shared\win32;E:\Shared\Sybase Central 4.1;E:\powerdynamo\PowerDynamo\win32;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;.
+五月 10, 2015 6:11:15 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-80"]
+五月 10, 2015 6:11:15 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 6:11:15 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 5310 ms
+五月 10, 2015 6:11:15 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+五月 10, 2015 6:11:15 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.59
+五月 10, 2015 6:11:31 下午 org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [2,423] milliseconds.
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [struts-default.xml]
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [struts-plugin.xml]
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [../struts.xml]
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.ObjectFactory)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+五月 10, 2015 6:11:33 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+五月 10, 2015 6:11:37 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\bin
+五月 10, 2015 6:11:38 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\bin has finished in 311 ms
+五月 10, 2015 6:11:38 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\css
+五月 10, 2015 6:11:38 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\css has finished in 514 ms
+五月 10, 2015 6:11:38 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\js
+五月 10, 2015 6:11:38 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\js has finished in 150 ms
+五月 10, 2015 6:11:38 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\jsp
+五月 10, 2015 6:11:38 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\jsp has finished in 141 ms
+五月 10, 2015 6:11:38 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\logs
+五月 10, 2015 6:11:39 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\logs has finished in 178 ms
+五月 10, 2015 6:11:39 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-80"]
+五月 10, 2015 6:11:39 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 6:11:39 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 24049 ms
+五月 10, 2015 6:14:05 下午 org.apache.jasper.compiler.TldLocationsCache tldScanJar
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+五月 10, 2015 6:16:11 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: Missing key [返回投票页面] in bundles [[org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]!
+五月 10, 2015 6:16:11 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The first TextProvider in the ValueStack (struts.Login) could not locate the message resource with key '返回投票页面'
+五月 10, 2015 6:16:11 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The default value expression '返回投票页面' was evaluated and did not match a property.  The literal value '返回投票页面' will be used.
+五月 10, 2015 6:36:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.59
+五月 10, 2015 6:36:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Jan 28 2015 15:51:10 UTC
+五月 10, 2015 6:36:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.59.0
+五月 10, 2015 6:36:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 7
+五月 10, 2015 6:36:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.1
+五月 10, 2015 6:36:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          x86
+五月 10, 2015 6:36:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             C:\vote\jdk1.8\jre
+五月 10, 2015 6:36:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_40-b25
+五月 10, 2015 6:36:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+五月 10, 2015 6:36:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         C:\vote\Tomcat
+五月 10, 2015 6:36:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         C:\vote\Tomcat
+五月 10, 2015 6:36:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=C:\vote\Tomcat\conf\logging.properties
+五月 10, 2015 6:36:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+五月 10, 2015 6:36:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=C:\vote\Tomcat\endorsed
+五月 10, 2015 6:36:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=C:\vote\Tomcat
+五月 10, 2015 6:36:04 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=C:\vote\Tomcat
+五月 10, 2015 6:36:04 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=C:\vote\Tomcat\temp
+五月 10, 2015 6:36:04 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\vote\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\vote\jdk1.8\bin;C:\vote\InnovationVote\WEB-INF\bin;;%MYSQL_HOME%\bin;C:\jdk5.0\bin;C:\jdk5.0\jre\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\vote;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows7Master;D:\Python27\;C:\MATLAB7\bin\win32;;E:\sq anywhere\win32;E:\Shared\win32;E:\Shared\Sybase Central 4.1;E:\powerdynamo\PowerDynamo\win32;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;.
+五月 10, 2015 6:36:06 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-80"]
+五月 10, 2015 6:36:07 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 6:36:07 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 11285 ms
+五月 10, 2015 6:36:07 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+五月 10, 2015 6:36:07 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.59
+五月 10, 2015 6:36:24 下午 org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [1,706] milliseconds.
+五月 10, 2015 6:36:26 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [struts-default.xml]
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [struts-plugin.xml]
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [../struts.xml]
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.ObjectFactory)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+五月 10, 2015 6:36:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+五月 10, 2015 6:36:32 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\bin
+五月 10, 2015 6:36:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\bin has finished in 258 ms
+五月 10, 2015 6:36:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\css
+五月 10, 2015 6:36:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\css has finished in 278 ms
+五月 10, 2015 6:36:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\js
+五月 10, 2015 6:36:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\js has finished in 248 ms
+五月 10, 2015 6:36:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\jsp
+五月 10, 2015 6:36:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\jsp has finished in 165 ms
+五月 10, 2015 6:36:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\logs
+五月 10, 2015 6:36:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\logs has finished in 155 ms
+五月 10, 2015 6:36:33 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-80"]
+五月 10, 2015 6:36:34 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 6:36:34 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 27470 ms
+五月 10, 2015 6:36:59 下午 org.apache.jasper.compiler.TldLocationsCache tldScanJar
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+五月 10, 2015 6:56:20 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger error
+严重: Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'ProjectID' on 'class struts.Login: Error setting expression 'ProjectID' with value ['', ]
+五月 10, 2015 6:56:20 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger error
+严重: Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'UserNo' on 'class struts.Login: Error setting expression 'UserNo' with value ['', ]
+五月 10, 2015 6:56:22 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: Missing key [返回投票页面] in bundles [[org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]!
+五月 10, 2015 6:56:22 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The first TextProvider in the ValueStack (struts.Login) could not locate the message resource with key '返回投票页面'
+五月 10, 2015 6:56:22 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The default value expression '返回投票页面' was evaluated and did not match a property.  The literal value '返回投票页面' will be used.
+五月 10, 2015 6:56:29 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger error
+严重: Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'ProjectID' on 'class struts.Login: Error setting expression 'ProjectID' with value ['ds', ]
+五月 10, 2015 6:56:29 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger error
+严重: Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'UserNo' on 'class struts.Login: Error setting expression 'UserNo' with value ['hds', ]
+五月 10, 2015 6:56:29 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: Missing key [invalid.fieldvalue.ProjectID] in bundles [[org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]!
+五月 10, 2015 6:56:29 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: Missing key [invalid.fieldvalue.UserNo] in bundles [[org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]!
+五月 10, 2015 6:56:29 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger error
+严重: Could not find action or result
+/Login
+No result defined for action struts.Login and result input - action - file:/C:/vote/InnovationVote/WEB-INF/struts.xml:11:51
+	at com.opensymphony.xwork2.DefaultActionInvocation.executeResult(DefaultActionInvocation.java:371)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:273)
+	at com.opensymphony.xwork2.validator.ValidationInterceptor.doIntercept(ValidationInterceptor.java:265)
+	at org.apache.struts2.interceptor.validation.AnnotationValidationInterceptor.doIntercept(AnnotationValidationInterceptor.java:76)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ConversionErrorInterceptor.intercept(ConversionErrorInterceptor.java:138)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:229)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ParametersInterceptor.doIntercept(ParametersInterceptor.java:229)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.StaticParametersInterceptor.intercept(StaticParametersInterceptor.java:191)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.MultiselectInterceptor.intercept(MultiselectInterceptor.java:73)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.DateTextFieldInterceptor.intercept(DateTextFieldInterceptor.java:125)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.CheckboxInterceptor.intercept(CheckboxInterceptor.java:91)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.FileUploadInterceptor.intercept(FileUploadInterceptor.java:253)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ModelDrivenInterceptor.intercept(ModelDrivenInterceptor.java:100)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ScopedModelDrivenInterceptor.intercept(ScopedModelDrivenInterceptor.java:141)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ChainingInterceptor.intercept(ChainingInterceptor.java:145)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.PrepareInterceptor.doIntercept(PrepareInterceptor.java:171)
+	at com.opensymphony.xwork2.interceptor.MethodFilterInterceptor.intercept(MethodFilterInterceptor.java:98)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.I18nInterceptor.intercept(I18nInterceptor.java:139)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.interceptor.ServletConfigInterceptor.intercept(ServletConfigInterceptor.java:164)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.AliasInterceptor.intercept(AliasInterceptor.java:193)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at com.opensymphony.xwork2.interceptor.ExceptionMappingInterceptor.intercept(ExceptionMappingInterceptor.java:189)
+	at com.opensymphony.xwork2.DefaultActionInvocation.invoke(DefaultActionInvocation.java:244)
+	at org.apache.struts2.impl.StrutsActionProxy.execute(StrutsActionProxy.java:54)
+	at org.apache.struts2.dispatcher.Dispatcher.serviceAction(Dispatcher.java:564)
+	at org.apache.struts2.dispatcher.ng.ExecuteOperations.executeAction(ExecuteOperations.java:81)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 10, 2015 6:57:44 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: Missing key [返回投票页面] in bundles [[org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]!
+五月 10, 2015 6:57:44 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The first TextProvider in the ValueStack (struts.Login) could not locate the message resource with key '返回投票页面'
+五月 10, 2015 6:57:44 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The default value expression '返回投票页面' was evaluated and did not match a property.  The literal value '返回投票页面' will be used.
+五月 10, 2015 6:59:36 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: Missing key [返回投票页面] in bundles [[org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]!
+五月 10, 2015 6:59:36 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The first TextProvider in the ValueStack (struts.Login) could not locate the message resource with key '返回投票页面'
+五月 10, 2015 6:59:36 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The default value expression '返回投票页面' was evaluated and did not match a property.  The literal value '返回投票页面' will be used.
+五月 10, 2015 7:02:22 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: Missing key [返回投票页面] in bundles [[org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]!
+五月 10, 2015 7:02:23 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The first TextProvider in the ValueStack (struts.Login) could not locate the message resource with key '返回投票页面'
+五月 10, 2015 7:02:23 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The default value expression '返回投票页面' was evaluated and did not match a property.  The literal value '返回投票页面' will be used.
+五月 10, 2015 7:56:10 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.59
+五月 10, 2015 7:56:10 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Jan 28 2015 15:51:10 UTC
+五月 10, 2015 7:56:10 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.59.0
+五月 10, 2015 7:56:10 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 7
+五月 10, 2015 7:56:10 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.1
+五月 10, 2015 7:56:10 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          x86
+五月 10, 2015 7:56:10 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             C:\vote\jdk1.8\jre
+五月 10, 2015 7:56:10 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_40-b25
+五月 10, 2015 7:56:10 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+五月 10, 2015 7:56:10 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         C:\vote\Tomcat
+五月 10, 2015 7:56:10 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         C:\vote\Tomcat
+五月 10, 2015 7:56:10 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=C:\vote\Tomcat\conf\logging.properties
+五月 10, 2015 7:56:10 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+五月 10, 2015 7:56:10 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=C:\vote\Tomcat\endorsed
+五月 10, 2015 7:56:10 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=C:\vote\Tomcat
+五月 10, 2015 7:56:10 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=C:\vote\Tomcat
+五月 10, 2015 7:56:10 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=C:\vote\Tomcat\temp
+五月 10, 2015 7:56:10 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\vote\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\vote\jdk1.8\bin;C:\vote\InnovationVote\WEB-INF\bin;;%MYSQL_HOME%\bin;C:\jdk5.0\bin;C:\jdk5.0\jre\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\vote;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows7Master;D:\Python27\;C:\MATLAB7\bin\win32;;E:\sq anywhere\win32;E:\Shared\win32;E:\Shared\Sybase Central 4.1;E:\powerdynamo\PowerDynamo\win32;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;.
+五月 10, 2015 7:56:11 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-80"]
+五月 10, 2015 7:56:11 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 7:56:11 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1659 ms
+五月 10, 2015 7:56:11 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+五月 10, 2015 7:56:11 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.59
+五月 10, 2015 7:56:14 下午 org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [590] milliseconds.
+五月 10, 2015 7:56:14 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [struts-default.xml]
+五月 10, 2015 7:56:14 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [struts-plugin.xml]
+五月 10, 2015 7:56:14 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [../struts.xml]
+五月 10, 2015 7:56:14 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.ObjectFactory)
+五月 10, 2015 7:56:14 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+五月 10, 2015 7:56:14 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+五月 10, 2015 7:56:14 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+五月 10, 2015 7:56:15 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+五月 10, 2015 7:56:16 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\bin
+五月 10, 2015 7:56:16 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\bin has finished in 150 ms
+五月 10, 2015 7:56:16 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\css
+五月 10, 2015 7:56:16 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\css has finished in 150 ms
+五月 10, 2015 7:56:16 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\js
+五月 10, 2015 7:56:17 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\js has finished in 340 ms
+五月 10, 2015 7:56:17 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\jsp
+五月 10, 2015 7:56:17 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\jsp has finished in 130 ms
+五月 10, 2015 7:56:17 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\logs
+五月 10, 2015 7:56:17 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\logs has finished in 140 ms
+五月 10, 2015 7:56:17 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-80"]
+五月 10, 2015 7:56:17 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 7:56:17 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 6320 ms
+五月 10, 2015 7:56:41 下午 org.apache.jasper.compiler.TldLocationsCache tldScanJar
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+五月 10, 2015 7:56:43 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: Missing key [返回投票页面] in bundles [[org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]!
+五月 10, 2015 7:56:43 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The first TextProvider in the ValueStack (struts.Login) could not locate the message resource with key '返回投票页面'
+五月 10, 2015 7:56:43 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The default value expression '返回投票页面' was evaluated and did not match a property.  The literal value '返回投票页面' will be used.
+五月 10, 2015 7:56:44 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login.action' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 7:56:45 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login.action' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 7:56:56 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger error
+严重: Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'ProjectID' on 'class struts.Login: Error setting expression 'ProjectID' with value ['', ]
+五月 10, 2015 7:56:57 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger error
+严重: Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'UserNo' on 'class struts.Login: Error setting expression 'UserNo' with value ['', ]
+五月 10, 2015 7:56:57 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: Missing key [返回投票页面] in bundles [[org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]!
+五月 10, 2015 7:56:57 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The first TextProvider in the ValueStack (struts.Login) could not locate the message resource with key '返回投票页面'
+五月 10, 2015 7:56:57 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The default value expression '返回投票页面' was evaluated and did not match a property.  The literal value '返回投票页面' will be used.
+五月 10, 2015 7:56:59 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login.action' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 7:56:59 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login.action' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 7:57:10 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: Missing key [返回投票页面] in bundles [[org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]!
+五月 10, 2015 7:57:10 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The first TextProvider in the ValueStack (struts.Login) could not locate the message resource with key '返回投票页面'
+五月 10, 2015 7:57:10 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The default value expression '返回投票页面' was evaluated and did not match a property.  The literal value '返回投票页面' will be used.
+五月 10, 2015 7:57:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login.action' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 7:57:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login.action' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 8:00:24 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.59
+五月 10, 2015 8:00:24 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Jan 28 2015 15:51:10 UTC
+五月 10, 2015 8:00:24 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.59.0
+五月 10, 2015 8:00:24 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 7
+五月 10, 2015 8:00:24 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.1
+五月 10, 2015 8:00:24 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          x86
+五月 10, 2015 8:00:24 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             C:\vote\jdk1.8\jre
+五月 10, 2015 8:00:24 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_40-b25
+五月 10, 2015 8:00:24 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+五月 10, 2015 8:00:24 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         C:\vote\Tomcat
+五月 10, 2015 8:00:24 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         C:\vote\Tomcat
+五月 10, 2015 8:00:24 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=C:\vote\Tomcat\conf\logging.properties
+五月 10, 2015 8:00:24 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+五月 10, 2015 8:00:24 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=C:\vote\Tomcat\endorsed
+五月 10, 2015 8:00:24 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=C:\vote\Tomcat
+五月 10, 2015 8:00:24 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=C:\vote\Tomcat
+五月 10, 2015 8:00:24 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=C:\vote\Tomcat\temp
+五月 10, 2015 8:00:24 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\vote\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\vote\jdk1.8\bin;C:\vote\InnovationVote\WEB-INF\bin;;%MYSQL_HOME%\bin;C:\jdk5.0\bin;C:\jdk5.0\jre\bin;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\vote;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows7Master;D:\Python27\;C:\MATLAB7\bin\win32;;E:\sq anywhere\win32;E:\Shared\win32;E:\Shared\Sybase Central 4.1;E:\powerdynamo\PowerDynamo\win32;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\IDM Computer Solutions\UltraEdit\;.
+五月 10, 2015 8:00:25 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-80"]
+五月 10, 2015 8:00:25 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 8:00:25 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1251 ms
+五月 10, 2015 8:00:25 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+五月 10, 2015 8:00:25 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.59
+五月 10, 2015 8:00:27 下午 org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [480] milliseconds.
+五月 10, 2015 8:00:27 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [struts-default.xml]
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [struts-plugin.xml]
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [../struts.xml]
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.ObjectFactory)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+五月 10, 2015 8:00:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+五月 10, 2015 8:00:29 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\bin
+五月 10, 2015 8:00:29 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\bin has finished in 90 ms
+五月 10, 2015 8:00:29 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\css
+五月 10, 2015 8:00:29 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\css has finished in 80 ms
+五月 10, 2015 8:00:29 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\js
+五月 10, 2015 8:00:29 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\js has finished in 80 ms
+五月 10, 2015 8:00:29 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\jsp
+五月 10, 2015 8:00:29 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\jsp has finished in 80 ms
+五月 10, 2015 8:00:29 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\logs
+五月 10, 2015 8:00:29 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\logs has finished in 80 ms
+五月 10, 2015 8:00:29 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-80"]
+五月 10, 2015 8:00:29 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 8:00:29 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 4195 ms
+五月 10, 2015 8:00:40 下午 org.apache.jasper.compiler.TldLocationsCache tldScanJar
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+五月 10, 2015 8:00:40 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: Missing key [返回投票页面] in bundles [[org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]!
+五月 10, 2015 8:00:40 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The first TextProvider in the ValueStack (struts.Login) could not locate the message resource with key '返回投票页面'
+五月 10, 2015 8:00:40 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The default value expression '返回投票页面' was evaluated and did not match a property.  The literal value '返回投票页面' will be used.
+五月 10, 2015 8:00:51 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login.action' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 8:00:52 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login.action' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 8:01:00 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: Missing key [返回投票页面] in bundles [[org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]!
+五月 10, 2015 8:01:00 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The first TextProvider in the ValueStack (struts.Login) could not locate the message resource with key '返回投票页面'
+五月 10, 2015 8:01:00 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The default value expression '返回投票页面' was evaluated and did not match a property.  The literal value '返回投票页面' will be used.
+五月 10, 2015 8:01:53 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login.action' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 8:01:53 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login.action' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 8:02:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger error
+严重: Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'UserNo' on 'class struts.Login: Error setting expression 'UserNo' with value ['', ]
+五月 10, 2015 8:02:08 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: Missing key [返回投票页面] in bundles [[org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]!
+五月 10, 2015 8:02:08 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The first TextProvider in the ValueStack (struts.Login) could not locate the message resource with key '返回投票页面'
+五月 10, 2015 8:02:08 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The default value expression '返回投票页面' was evaluated and did not match a property.  The literal value '返回投票页面' will be used.
+五月 10, 2015 8:02:10 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login.action' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 8:02:10 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login.action' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 8:04:21 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 8:04:21 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 8:04:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger error
+严重: Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'ProjectID' on 'class struts.Login: Error setting expression 'ProjectID' with value ['', ]
+五月 10, 2015 8:04:28 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger error
+严重: Developer Notification (set struts.devMode to false to disable this message):
+Unexpected Exception caught setting 'UserNo' on 'class struts.Login: Error setting expression 'UserNo' with value ['', ]
+五月 10, 2015 8:04:29 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: Missing key [返回投票页面] in bundles [[org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]!
+五月 10, 2015 8:04:29 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The first TextProvider in the ValueStack (struts.Login) could not locate the message resource with key '返回投票页面'
+五月 10, 2015 8:04:29 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The default value expression '返回投票页面' was evaluated and did not match a property.  The literal value '返回投票页面' will be used.
+五月 10, 2015 8:04:31 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 8:04:31 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 8:04:59 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: Missing key [返回投票页面] in bundles [[org/apache/struts2/struts-messages, com/opensymphony/xwork2/xwork-messages]]!
+五月 10, 2015 8:04:59 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The first TextProvider in the ValueStack (struts.Login) could not locate the message resource with key '返回投票页面'
+五月 10, 2015 8:04:59 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: The default value expression '返回投票页面' was evaluated and did not match a property.  The literal value '返回投票页面' will be used.
+五月 10, 2015 8:05:01 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 8:05:01 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger warn
+警告: No configuration found for the specified action: 'Login' in namespace: ''. Form action defaulting to 'action' attribute's literal value.
+五月 10, 2015 9:00:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.59
+五月 10, 2015 9:00:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Jan 28 2015 15:51:10 UTC
+五月 10, 2015 9:00:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.59.0
+五月 10, 2015 9:00:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 8.1
+五月 10, 2015 9:00:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.3
+五月 10, 2015 9:00:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          x86
+五月 10, 2015 9:00:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             C:\vote\jdk1.8\jre
+五月 10, 2015 9:00:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_40-b25
+五月 10, 2015 9:00:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+五月 10, 2015 9:00:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         C:\vote\Tomcat
+五月 10, 2015 9:00:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         C:\vote\Tomcat
+五月 10, 2015 9:00:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=C:\vote\Tomcat\conf\logging.properties
+五月 10, 2015 9:00:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+五月 10, 2015 9:00:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=C:\vote\Tomcat\endorsed
+五月 10, 2015 9:00:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=C:\vote\Tomcat
+五月 10, 2015 9:00:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=C:\vote\Tomcat
+五月 10, 2015 9:00:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=C:\vote\Tomcat\temp
+五月 10, 2015 9:00:58 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\vote\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\vote\jdk1.8\bin;C:\vote\InnovationVote\WEB-INF\bin;D:\Programming\Oracle\product\12.1.0\dbhome_1\bin;C:\Python27\;C:\Python27\Scripts;D:\Program Files\MATLAB\bin;D:\Program Files\MATLAB\bin\win64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;D:\Programming\Tortoise\bin;C:\Program Files (x86)\QuickTime\QTSystem\;D:\Program Files\MATLAB\runtime\win64;D:\Program Files\MATLAB\polyspace\bin;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Autodesk\Backburner\;D:\Programming\SQL Anywhere 11\bin64;D:\Programming\SQL Anywhere 11\bin32;D:\Programming\PowerBuilder11.5\Shared\PowerBuilder;D:\Programming\PowerBuilder11.5\PowerBuilder 11.5;C:\Windows\Microsoft.NET\Framework\v2.0.50727;d:\programming\altera\90\quartus\bin;.
+五月 10, 2015 9:00:58 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-80"]
+五月 10, 2015 9:00:58 下午 org.apache.coyote.AbstractProtocol init
+严重: Failed to initialize end point associated with ProtocolHandler ["http-bio-80"]
+java.net.BindException: Address already in use: JVM_Bind <null>:80
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:411)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:646)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:821)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:638)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:663)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:280)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:454)
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:382)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:398)
+	... 17 more
+
+五月 10, 2015 9:00:58 下午 org.apache.catalina.core.StandardService initInternal
+严重: Failed to initialize connector [Connector[HTTP/1.1-80]]
+org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-80]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:106)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:559)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:821)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:638)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:663)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:280)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:454)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:980)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:102)
+	... 12 more
+Caused by: java.net.BindException: Address already in use: JVM_Bind <null>:80
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:411)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:646)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:434)
+	at org.apache.coyote.http11.AbstractHttp11JsseProtocol.init(AbstractHttp11JsseProtocol.java:119)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:978)
+	... 13 more
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.DualStackPlainSocketImpl.bind0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106)
+	at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:382)
+	at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190)
+	at java.net.ServerSocket.bind(ServerSocket.java:375)
+	at java.net.ServerSocket.<init>(ServerSocket.java:237)
+	at java.net.ServerSocket.<init>(ServerSocket.java:181)
+	at org.apache.tomcat.util.net.DefaultServerSocketFactory.createSocket(DefaultServerSocketFactory.java:49)
+	at org.apache.tomcat.util.net.JIoEndpoint.bind(JIoEndpoint.java:398)
+	... 17 more
+
+五月 10, 2015 9:00:59 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 9:00:59 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1547 ms
+五月 10, 2015 9:00:59 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+五月 10, 2015 9:00:59 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.59
+五月 10, 2015 9:01:05 下午 org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [260] milliseconds.
+五月 10, 2015 9:01:06 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [struts-default.xml]
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [struts-plugin.xml]
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [../struts.xml]
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.ObjectFactory)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+五月 10, 2015 9:01:07 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+五月 10, 2015 9:01:08 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\bin
+五月 10, 2015 9:01:08 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\bin has finished in 100 ms
+五月 10, 2015 9:01:08 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\css
+五月 10, 2015 9:01:08 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\css has finished in 90 ms
+五月 10, 2015 9:01:08 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\js
+五月 10, 2015 9:01:08 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\js has finished in 100 ms
+五月 10, 2015 9:01:08 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\jsp
+五月 10, 2015 9:01:08 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\jsp has finished in 90 ms
+五月 10, 2015 9:01:08 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\logs
+五月 10, 2015 9:01:09 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\logs has finished in 90 ms
+五月 10, 2015 9:01:09 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 9:01:09 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 10029 ms
+五月 10, 2015 9:02:40 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+五月 10, 2015 9:02:40 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-80"]
+五月 10, 2015 9:02:40 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 9:02:40 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+五月 10, 2015 9:02:40 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 9:02:40 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-80"]
+五月 10, 2015 9:02:40 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-80"]
+五月 10, 2015 9:02:40 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.59
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Jan 28 2015 15:51:10 UTC
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.59.0
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 8.1
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.3
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          x86
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             C:\vote\jdk1.8\jre
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_40-b25
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         C:\vote\Tomcat
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         C:\vote\Tomcat
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=C:\vote\Tomcat\conf\logging.properties
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=C:\vote\Tomcat\endorsed
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=C:\vote\Tomcat
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=C:\vote\Tomcat
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=C:\vote\Tomcat\temp
+五月 10, 2015 9:02:43 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\vote\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\vote\jdk1.8\bin;C:\vote\InnovationVote\WEB-INF\bin;D:\Programming\Oracle\product\12.1.0\dbhome_1\bin;C:\Python27\;C:\Python27\Scripts;D:\Program Files\MATLAB\bin;D:\Program Files\MATLAB\bin\win64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;D:\Programming\Tortoise\bin;C:\Program Files (x86)\QuickTime\QTSystem\;D:\Program Files\MATLAB\runtime\win64;D:\Program Files\MATLAB\polyspace\bin;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Autodesk\Backburner\;D:\Programming\SQL Anywhere 11\bin64;D:\Programming\SQL Anywhere 11\bin32;D:\Programming\PowerBuilder11.5\Shared\PowerBuilder;D:\Programming\PowerBuilder11.5\PowerBuilder 11.5;C:\Windows\Microsoft.NET\Framework\v2.0.50727;d:\programming\altera\90\quartus\bin;.
+五月 10, 2015 9:02:43 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8011"]
+五月 10, 2015 9:02:43 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 9:02:43 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1194 ms
+五月 10, 2015 9:02:43 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+五月 10, 2015 9:02:43 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.59
+五月 10, 2015 9:02:46 下午 org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [186] milliseconds.
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [struts-default.xml]
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [struts-plugin.xml]
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [../struts.xml]
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.ObjectFactory)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+五月 10, 2015 9:02:46 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+五月 10, 2015 9:02:47 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\bin
+五月 10, 2015 9:02:47 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\bin has finished in 107 ms
+五月 10, 2015 9:02:47 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\css
+五月 10, 2015 9:02:47 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\css has finished in 92 ms
+五月 10, 2015 9:02:47 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\js
+五月 10, 2015 9:02:48 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\js has finished in 100 ms
+五月 10, 2015 9:02:48 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\jsp
+五月 10, 2015 9:02:48 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\jsp has finished in 88 ms
+五月 10, 2015 9:02:48 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\logs
+五月 10, 2015 9:02:48 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\logs has finished in 90 ms
+五月 10, 2015 9:02:48 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8011"]
+五月 10, 2015 9:02:48 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 9:02:48 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 4558 ms
+五月 10, 2015 9:04:40 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+五月 10, 2015 9:04:40 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8011"]
+五月 10, 2015 9:04:40 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 9:04:40 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+五月 10, 2015 9:04:40 下午 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+五月 10, 2015 9:04:40 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8011"]
+五月 10, 2015 9:04:40 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 9:04:40 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8011"]
+五月 10, 2015 9:04:40 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.59
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Jan 28 2015 15:51:10 UTC
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.59.0
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Windows 8.1
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            6.3
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          x86
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             C:\vote\jdk1.8\jre
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_40-b25
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         C:\vote\Tomcat
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         C:\vote\Tomcat
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=C:\vote\Tomcat\conf\logging.properties
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=C:\vote\Tomcat\endorsed
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=C:\vote\Tomcat
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=C:\vote\Tomcat
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=C:\vote\Tomcat\temp
+五月 10, 2015 9:07:09 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\vote\jdk1.8\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\vote\jdk1.8\bin;C:\vote\InnovationVote\WEB-INF\bin;D:\Programming\Oracle\product\12.1.0\dbhome_1\bin;C:\Python27\;C:\Python27\Scripts;D:\Program Files\MATLAB\bin;D:\Program Files\MATLAB\bin\win64;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\Program Files\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;C:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;D:\Programming\Tortoise\bin;C:\Program Files (x86)\QuickTime\QTSystem\;D:\Program Files\MATLAB\runtime\win64;D:\Program Files\MATLAB\polyspace\bin;C:\Program Files\Common Files\Autodesk Shared\;C:\Program Files (x86)\Autodesk\Backburner\;D:\Programming\SQL Anywhere 11\bin64;D:\Programming\SQL Anywhere 11\bin32;D:\Programming\PowerBuilder11.5\Shared\PowerBuilder;D:\Programming\PowerBuilder11.5\PowerBuilder 11.5;C:\Windows\Microsoft.NET\Framework\v2.0.50727;d:\programming\altera\90\quartus\bin;.
+五月 10, 2015 9:07:09 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8011"]
+五月 10, 2015 9:07:09 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 9:07:09 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1171 ms
+五月 10, 2015 9:07:09 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+五月 10, 2015 9:07:09 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.59
+五月 10, 2015 9:07:12 下午 org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [184] milliseconds.
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [struts-default.xml]
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [struts-plugin.xml]
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [../struts.xml]
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.ObjectFactory)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+五月 10, 2015 9:07:12 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+五月 10, 2015 9:07:13 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+五月 10, 2015 9:07:13 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+五月 10, 2015 9:07:13 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+五月 10, 2015 9:07:13 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+五月 10, 2015 9:07:13 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+五月 10, 2015 9:07:13 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+五月 10, 2015 9:07:13 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+五月 10, 2015 9:07:13 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+五月 10, 2015 9:07:13 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+五月 10, 2015 9:07:13 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+五月 10, 2015 9:07:13 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+五月 10, 2015 9:07:13 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+五月 10, 2015 9:07:13 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+五月 10, 2015 9:07:13 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\bin
+五月 10, 2015 9:07:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\bin has finished in 116 ms
+五月 10, 2015 9:07:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\css
+五月 10, 2015 9:07:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\css has finished in 101 ms
+五月 10, 2015 9:07:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\js
+五月 10, 2015 9:07:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\js has finished in 108 ms
+五月 10, 2015 9:07:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\jsp
+五月 10, 2015 9:07:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\jsp has finished in 87 ms
+五月 10, 2015 9:07:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory C:\vote\InnovationVote\logs
+五月 10, 2015 9:07:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory C:\vote\InnovationVote\logs has finished in 94 ms
+五月 10, 2015 9:07:14 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8011"]
+五月 10, 2015 9:07:14 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+五月 10, 2015 9:07:14 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 4735 ms
+五月 10, 2015 9:08:58 下午 org.apache.jasper.compiler.TldLocationsCache tldScanJar
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+五月 10, 2015 9:21:27 下午 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] has started
+五月 10, 2015 9:21:27 下午 org.apache.catalina.core.StandardWrapper unload
+信息: Waiting for 1 instance(s) to be deallocated for Servlet [jsp]
+五月 10, 2015 9:21:27 下午 org.apache.catalina.loader.WebappClassLoader clearReferencesJdbc
+严重: The web application [] registered the JDBC driver [com.mysql.jdbc.Driver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+五月 10, 2015 9:21:27 下午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [http-bio-8011-exec-1] but has failed to stop it. This is very likely to create a memory leak.
+五月 10, 2015 9:21:27 下午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [pool-1-thread-1] but has failed to stop it. This is very likely to create a memory leak.
+五月 10, 2015 9:21:27 下午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [pool-2-thread-1] but has failed to stop it. This is very likely to create a memory leak.
+五月 10, 2015 9:21:27 下午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [pool-3-thread-1] but has failed to stop it. This is very likely to create a memory leak.
+五月 10, 2015 9:21:27 下午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [pool-4-thread-1] but has failed to stop it. This is very likely to create a memory leak.
+五月 10, 2015 9:21:27 下午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [pool-5-thread-1] but has failed to stop it. This is very likely to create a memory leak.
+五月 10, 2015 9:21:27 下午 org.apache.catalina.loader.WebappClassLoader clearReferencesThreads
+严重: The web application [] appears to have started a thread named [pool-6-thread-1] but has failed to stop it. This is very likely to create a memory leak.
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [struts-default.xml]
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [struts-plugin.xml]
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Parsing configuration file [../struts.xml]
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.ObjectFactory)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ActionFactory)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ResultFactory)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ConverterFactory)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.InterceptorFactory)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.ValidatorFactory)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.factory.UnknownHandlerFactory)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.FileManagerFactory)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.XWorkConverter)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.CollectionConverter)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.ArrayConverter)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.DateConverter)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.NumberConverter)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.impl.StringConverter)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionPropertiesProcessor)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionFileProcessor)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ConversionAnnotationProcessor)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterCreator)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.TypeConverterHolder)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.TextProvider)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.LocaleProvider)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.ActionProxyFactory)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.conversion.ObjectTypeDeterminer)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.mapper.ActionMapper)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (jakarta) for (org.apache.struts2.dispatcher.multipart.MultiPartRequest)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.views.freemarker.FreemarkerManager)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.components.UrlRenderer)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.validator.ActionValidatorManager)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.ValueStackFactory)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionProvider)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.reflection.ReflectionContextFactory)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.PatternMatcher)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.StaticContentLoader)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.UnknownHandlerManager)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.views.util.UrlHelper)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.util.TextParser)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (org.apache.struts2.dispatcher.DispatcherErrorHandler)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.security.ExcludedPatternsChecker)
+五月 10, 2015 9:21:30 下午 com.opensymphony.xwork2.util.logging.jdk.JdkLogger info
+信息: Choosing bean (struts) for (com.opensymphony.xwork2.security.AcceptedPatternsChecker)
+五月 10, 2015 9:21:31 下午 org.apache.catalina.core.StandardContext reload
+信息: Reloading Context with name [] is completed

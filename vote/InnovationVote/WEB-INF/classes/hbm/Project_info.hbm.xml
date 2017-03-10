@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+  
+<hibernate-mapping package="db.pojo"> 
+    <class name="ProjectInfo" table="project_info"> 
+        <id name="ProjectID" column="PROJECT_ID">
+        	<generator class="identity"/> 
+        </id> 
+        <property name="Academy" column="ACADEMY"></property> 
+        <property name="ProjectName" column="PROJECT_NAME"></property> 
+        <property name="ProjectType" column="PROJECT_TYPE"></property> 
+        <property name="StudentNum" column="STUDENT_NUM"></property> 
+        <property name="LeaderName" column="LEADER_NAME"></property> 
+        <property name="LeaderPhone" column="LEADER_PHONE"></property> 
+        <property name="LeaderEmail" column="LEADER_EMAIL"></property> 
+        <property name="StudentOther" column="STUDENT_OTHER"></property> 
+        <property name="TutorName" column="TUTOR_NAME"></property>
+        <property name="ProjectOrient" column="PROJECT_ORIENT"></property> 
+        <property name="ProjectNemo" column="PROJECT_NEMO"></property> 
+        <property name="VoteNum" column="VOTE_NUM"></property>
+      
+    </class> 
+</hibernate-mapping> 

@@ -1,0 +1,58 @@
+#project-detail {
+	margin-top: 150px;
+}
+
+.project-detail-img-box img{
+	margin-top: 20px;
+    -moz-box-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 4px rgba(0,0,0,0.5);
+}
+
+h1.project-title {
+	font-weight: bold;
+}
+
+.main-partner, .other-partner {
+	color: #428bca;
+    font-weight: bold;
+}
+
+.partner {
+	margin-top: 20px;
+}
+
+.project-introduction {
+	margin-top: 20px;
+	font-size: 30px;
+	line-height: 35px;
+	color: black;
+}
+
+.vote-box {
+	height: 50px;
+	cursor: pointer;
+}
+
+.vote-box:hover span{
+	color: red;
+}
+
+.vote-box .vote-heart, .vote-box .vote {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.label {
+	padding: 5px 7px;
+	font-size: 80%;
+}
+
+@media screen and (max-width: 768px) {
+
+#project-detail {
+	margin-top: 50px;
+}
+
+}
+

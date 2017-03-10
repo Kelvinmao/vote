@@ -1,0 +1,203 @@
+<html lang="en">
+<!-- <%@ page language="java" contentType="text/html; charset=utf-8" %>
+<%@ taglib prefix="s" uri="/struts-tags" %> -->
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta charset="UTF-8">
+  <title>大创提交系统</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <!-- siimple style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
+  <link href="css/vegas.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <style type="text/css">
+  body {
+    background-color: #f6f6f6;
+  }
+
+  #logo-text,
+  #login {
+    color: #ffffff;
+    font-size: 20px;
+  }
+
+  #logo {
+    padding-top: 5px;
+  }
+  </style>
+</head>
+
+<body class="templatemo-bg-gray">
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="logo" href="index.jsp"><img src="images/logo.png" weight="48px" height="48px" /></a>
+    </div>
+    </div>
+  </nav>
+  <br/>
+  <br/>
+  <br/>
+  <div class="container">
+    <div class="col-lg-12">
+
+      <form class="form-horizontal templatemo-container templatemo-login-form-1 margin-bottom-30" role="form" action="login" method="post">
+        <div class="form-group">
+          <div class="col-lg-12">
+          <h1 class="margin-bottom-15">大创项目提交系统</h1>
+            <div class="control-wrapper">
+              <label for="username" class="control-label fa-label"><i class="fa fa-user fa-medium"></i></label>
+              <input type="text" class="form-control" id="username" placeholder="项目ID" name="username">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-12">
+            <div class="control-wrapper">
+              <label for="password" class="control-label fa-label"><i class="fa fa-lock fa-medium"></i></label>
+              <input type="password" class="form-control" id="password" placeholder="密码" name="password">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-lg-10">
+            <div class="control-wrapper col-md-offset-1">
+              <s:fielderror/>
+            </div>
+          </div>
+        </div>
+        <hr/>
+        <div class="form-group">
+          <div class="col-lg-8">
+            <div class="control-wrapper col-md-offset-5">
+              <input type="submit" value="登录" class="btn btn-info btn-block">
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="lottery-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            &times;
+          </button>
+          <h4 class="modal-title" id="myModalLabel">
+              抽奖
+           </h4>
+        </div>
+        <div class="modal-body" style="overflow: hidden">
+          <div class="col-lg-12">
+            <form id="form" class="form-horizontal" role="form">
+              <div id="lottery-user" class="form-group">
+                <label class="col-sm-2 control-label">用户名</label>
+                <div class="col-sm-10">
+                  <input class="textin form-control" type="text" placeholder="用户名">
+                </div>
+              </div>
+              <div id="lottery-psw" class="form-group">
+                <label class="col-sm-2 control-label">密码</label>
+                <div class="col-sm-10">
+                  <input class="textin form-control" type="text" placeholder="密码">
+                </div>
+              </div>
+              <div id="lottery-check" class="form-group">
+                <label class="col-sm-2 control-label">验证码</label>
+                <div class="col-sm-8">
+                  <input class="textin form-control" type="text" placeholder="验证码">
+                </div>
+                <!-- <div class="col-sm-2"><img src="" style="width: 100%"></div> -->
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+          </button>
+          <button type="button" class="btn btn-primary" data-toggle="modal">
+            抽奖
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--lottery-result-->
+  <div class="modal fade" id="lottery-result" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            &times;
+          </button>
+          <h4 class="modal-title" id="myModalLabel">
+              抽奖结果
+           </h4>
+        </div>
+        <div class="modal-body" style="overflow: hidden">
+          <div class="col-lg-12 success">
+            <div>
+              恭喜你抽中<span id="lo-result"></span>等奖!
+            </div>
+            <label class="col-sm-4 address-lab">请填写收货地址：</label>
+            <div class="col-sm-8 address">
+              <input class="textin form-control" type="text" placeholder="收货地址">
+            </div>
+            <div style="color: red;">
+              请认真填写，只有这一次机会！
+            </div>
+          </div>
+          <div class="fail">
+            很遗憾你没抽中，再接再厉~
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default closeUp" data-dismiss="modal">关闭
+          </button>
+          <button type="button" class="btn btn-default lotteryUp">提交
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/vegas.min.js"></script>
+  <script type="text/javascript" src="js/mock.js"></script>
+  <script src="js/index.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('body').vegas({
+      slides: [{
+        src: "images/BG1.jpg"
+      }, {
+        src: "images/BG2.jpg"
+      }, {
+        src: "images/BG3.jpg"
+      }, {
+        src: "images/BG4.jpg"
+      }],
+      timer: false,
+      transition: 'random',
+      delay: 6000
+    })
+  })
+  </script>
+</body>
+
+</html>

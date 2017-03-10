@@ -1,0 +1,9 @@
+llHome=C:\\LabMS
+driver=org.gjt.mm.mysql.Driver
+serverURL=jdbc:mysql://localhost/test
+username=
+password=
+minConnections=3
+maxConnections=20
+maxConnectionLifeTimes=0.1
+maxConnectionLockTimes=0.025

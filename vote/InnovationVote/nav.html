@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<%@ page language="java"  import="java.util.*, db.fun.*,db.pojo.*" contentType="text/html; charset=utf-8" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>大创展投票系统</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link href="css/vegas.min.css" rel="stylesheet">
+  <!-- simple style -->
+  <link href="css/style.css" rel="stylesheet">
+  <style type="text/css">
+  body {
+    background-color: #f6f6f6;
+  }
+  
+  #logo-text{
+    color: #ffffff;
+    font-size: 20px;
+  }
+  
+  #logo {
+    padding-top: 5px;
+  }
+  </style>
+</head>
+
+<body>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="logo" href="index.jsp" style="margin-bottom: 5px"><img src="images/logo.png" weight="45px" height="45px" /></a>
+    </div>
+         <ul class="nav navbar-nav navbar-right" style="margin-right: 20px">
+        <div class="dropdown pull-right">
+          <button class="btn dropdown-toggle" type="button" id="login-name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+            <s:property value="username"> 
+            <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="changePassword.jsp">修改密码</a></li>
+            <li><a href="logout.jsp">注销</a></li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+  </nav>
+
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/mock.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

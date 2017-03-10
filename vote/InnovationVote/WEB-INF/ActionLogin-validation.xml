@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<!DOCTYPE validators PUBLIC   
+  "-//OpenSymphony Group//XWork Validator 2.3//EN"   "http://www.opensymphony.com/xwork/xwork-validator-2.3.dtd">   
+<validators>	
+
+<field name="UserNo">
+	<field-validator type="required">
+       <message>用户名不能为空!</message>
+</field-validator>
+</field>
+	<field name="ProjectID">
+ 	<field-validator type="required">
+	<message>项目号不能为空</message>
+</field-validator>
+
+</field>
+	<field name="UserNo">
+	<field-validator type="long">
+
+	 <message>用户名为整数！</message>
+</field-validator>
+
+</field>
+<field name="ProjectID">
+<field-validator type="int">
+ <param name="min">1</param>
+ <param name="max">300</param>
+ <message>您输入的项目不存在！</message>
+</field-validator>
+
+</field>
+
+</validators>

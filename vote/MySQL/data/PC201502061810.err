@@ -1,0 +1,23 @@
+150412 16:46:33 [Note] Plugin 'FEDERATED' is disabled.
+150412 16:46:33 [Note] Plugin 'InnoDB' is disabled.
+150412 16:46:33 [Note] Event Scheduler: Loaded 0 events
+150412 16:46:33 [Note] C:\vote\MySQL\bin\mysqld: ready for connections.
+Version: '5.1.70-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+150416 18:56:23 [Note] Plugin 'FEDERATED' is disabled.
+150416 18:56:23 [Note] Plugin 'InnoDB' is disabled.
+150416 18:56:24 [Note] Event Scheduler: Loaded 0 events
+150416 18:56:24 [Note] C:\vote\MySQL\bin\mysqld: ready for connections.
+Version: '5.1.70-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+150416 19:18:57 [Note] Plugin 'FEDERATED' is disabled.
+150416 19:18:57 [Note] Plugin 'InnoDB' is disabled.
+Can't start server: Bind on TCP/IP port: No such file or directory
+150416 19:18:57 [ERROR] Do you already have another mysqld server running on port: 3306 ?
+150416 19:18:57 [ERROR] Aborting
+
+150416 19:18:57 [Note] C:\vote\MySQL\bin\mysqld: Shutdown complete
+
+150418 18:51:50 [Note] Plugin 'FEDERATED' is disabled.
+150418 18:51:50 [Note] Plugin 'InnoDB' is disabled.
+150418 18:51:51 [Note] Event Scheduler: Loaded 0 events
+150418 18:51:51 [Note] C:\vote\MySQL\bin\mysqld: ready for connections.
+Version: '5.1.70-community'  socket: ''  port: 3306  MySQL Community Server (GPL)

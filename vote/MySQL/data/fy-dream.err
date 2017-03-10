@@ -1,0 +1,30 @@
+160416 23:00:54 [Note] Plugin 'FEDERATED' is disabled.
+160416 23:00:54 [Note] Plugin 'InnoDB' is disabled.
+160416 23:00:54 [Note] Event Scheduler: Loaded 0 events
+160416 23:00:54 [Note] C:\vote\MySQL\bin\mysqld: ready for connections.
+Version: '5.1.70-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+160416 23:01:07 [Note] C:\vote\MySQL\bin\mysqld: Normal shutdown
+
+160416 23:01:07 [Note] Event Scheduler: Purging the queue. 0 events
+160416 23:01:07 [Note] C:\vote\MySQL\bin\mysqld: Shutdown complete
+
+160417 12:49:19 [Note] Plugin 'FEDERATED' is disabled.
+160417 12:49:19 [Note] Plugin 'InnoDB' is disabled.
+160417 12:49:20 [Note] Event Scheduler: Loaded 0 events
+160417 12:49:20 [Note] C:\vote\MySQL\bin\mysqld: ready for connections.
+Version: '5.1.70-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+160417 12:49:35 [Note] C:\vote\MySQL\bin\mysqld: Normal shutdown
+
+160417 12:49:35 [Note] Event Scheduler: Purging the queue. 0 events
+160417 12:49:35 [Note] C:\vote\MySQL\bin\mysqld: Shutdown complete
+
+160417 12:50:54 [Note] Plugin 'FEDERATED' is disabled.
+160417 12:50:54 [Note] Plugin 'InnoDB' is disabled.
+160417 12:50:54 [Note] Event Scheduler: Loaded 0 events
+160417 12:50:54 [Note] C:\vote\MySQL\bin\mysqld: ready for connections.
+Version: '5.1.70-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+160417 12:51:33 [Note] C:\vote\MySQL\bin\mysqld: Normal shutdown
+
+160417 12:51:33 [Note] Event Scheduler: Purging the queue. 0 events
+160417 12:51:33 [Note] C:\vote\MySQL\bin\mysqld: Shutdown complete
+

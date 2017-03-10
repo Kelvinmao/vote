@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+  
+<hibernate-mapping package="db.pojo"> 
+    <class  name="ProjectData" table="project_data"> 
+        <id name="ProjectID"   column="PROJECT_ID">
+        	<generator class="identity"/> 
+        </id> 
+        <property name="ProjectPassword"      column="PROJECT_PASSWORD">      </property> 
+        <property name="ProjectAcademy"       column="PROJECT_ACADEMY">       </property> 
+        <property name="ProjectName"          column="PROJECT_NAME">          </property> 
+        <property name="ProjectType"          column="PROJECT_TYPE">          </property> 
+        <property name="ProjectClassify"      column="PROJECT_CLASSIFY">      </property> 
+        <property name="ProjectTutor"         column="PROJECT_TUTOR">         </property> 
+        <property name="ProjectMembers"       column="PROJECT_MEMBERS">       </property> 
+        <property name="ProjectImage"         column="PROJECT_IMAGE">         </property> 
+        <property name="ProjectIntroduction"  column="PROJECT_INTRODUCTION">  </property>
+        <property name="LeaderName"           column="LEADER_NAME">           </property> 
+        <property name="LeaderTel"            column="LEADER_TEL">            </property> 
+        <property name="LeaderEmail"          column="LEADER_EMAIL">          </property>
+        <property name="MemberNumber"         column="MEMBER_NUMBER">         </property>
+        <property name="IsExhibit"            column="IS_EXHIBIT">            </property> 
+        <property name="VoteNumber"           column="VOTE_NUMBER">           </property>
+    </class> 
+</hibernate-mapping> 

@@ -1,0 +1,110 @@
+body {
+  background-color: #f6f6f6;
+  font-family: "Microsoft YaHei";
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6em;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+/* Header */
+
+#main {
+  background-color: #f6f6f6;
+  background-size: cover;
+  background: no-repeat center top;
+  margin-top: -20px;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 700px;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#main h1 {
+  font-family: "Microsoft YaHei";
+  /*margin-top: 60px;*/
+  margin-bottom: 15px;
+  color: #000;
+  font-size: 45px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+h2.subtitle {
+  color: #000;
+  font-size: 20px;
+}
+
+nav{
+  opacity: 0.9;
+}
+
+.bg {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.btn,.btn.lg{
+  border-radius: 0;
+}
+
+#WIN-2{
+  padding: 0;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#WIN-2+h2{
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.alert-danger{
+  display: none;
+  margin-bottom: 0;
+}
+
+#check-img{
+  padding: 0 15px 0 0;
+  height: 34px;
+  cursor: pointer;
+}
+
+#check-img img{
+  width: 100%;
+  height: 100%;
+}
+
+.main>div.col-lg-4{
+  padding: 20px;
+  background: rgba(255,255,255,0.5);
+}
+
+.address-lab,.address{
+  padding: 0;
+}
+
+#login-name{
+  line-height: 50px;
+  border: 0;
+  background: transparent; 
+  padding: 0;
+  color: #ddd;
+  transition: .2s;
+}
+
+#login-name:hover{
+  background: transparent !important;
+  color: #ddd;
+}

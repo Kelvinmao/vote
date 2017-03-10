@@ -1,0 +1,1688 @@
+五月 16, 2015 9:33:21 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception
+Action class [JsonAction] not found - action - file:/C:/vote/InnovationVote/WEB-INF/struts.xml:28:69
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.verifyAction(XmlConfigurationProvider.java:486)
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.addAction(XmlConfigurationProvider.java:429)
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.addPackage(XmlConfigurationProvider.java:556)
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadPackages(XmlConfigurationProvider.java:295)
+	at org.apache.struts2.config.StrutsXmlConfigurationProvider.loadPackages(StrutsXmlConfigurationProvider.java:112)
+	at com.opensymphony.xwork2.config.impl.DefaultConfiguration.reloadContainer(DefaultConfiguration.java:264)
+	at com.opensymphony.xwork2.config.ConfigurationManager.reloadProviders(ConfigurationManager.java:235)
+	at com.opensymphony.xwork2.config.ConfigurationManager.conditionalReload(ConfigurationManager.java:184)
+	at com.opensymphony.xwork2.config.ConfigurationManager.getConfiguration(ConfigurationManager.java:73)
+	at org.apache.struts2.dispatcher.Dispatcher.getContainer(Dispatcher.java:967)
+	at org.apache.struts2.dispatcher.ng.PrepareOperations.createActionContext(PrepareOperations.java:80)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:89)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2015 9:36:37 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /test.jsp at line 18
+
+15: 	 		Date date = new Date(); 
+16:       int a=0;
+17: 
+18: 	 		new FunVoteRecord().VoteDelete(l,u);
+19: 	 		%>
+20: 	 	</table>
+21:   </center>
+
+
+Stacktrace:] with root cause
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at db.fun.FunVoteRecord.VoteDelete(FunVoteRecord.java:83)
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:83)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2015 9:57:13 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /test.jsp at line 18
+
+15: 	 		Date date = new Date(); 
+16:       int a=0;
+17: 
+18: 	 		new FunVoteRecord().VoteDelete(l,u);
+19: 	 		%>
+20: 	 	</table>
+21:   </center>
+
+
+Stacktrace:] with root cause
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at db.fun.FunVoteRecord.VoteDelete(FunVoteRecord.java:83)
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:83)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2015 10:04:02 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /test.jsp at line 19
+
+16:       int a=0;
+17: 
+18: 	 		List list = new FunVoteRecord().VoteDelete(l,u);
+19: 	 		VoteRecord v = (VoteRecord)list.get(0);
+20: 	 		out.print(v.getProjectID());
+21: 	 		out.print(list.size());
+22: 	 		%>
+
+
+Stacktrace:] with root cause
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:84)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2015 10:06:26 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.IndexOutOfBoundsException: Index: 0, Size: 0] with root cause
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:84)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2015 10:22:28 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [default] in context with path [] threw exception
+Unable to load file:/C:/vote/InnovationVote/WEB-INF/struts.xml - file:/C:/vote/InnovationVote/WEB-INF/struts.xml:43:7
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadConfigurationFiles(XmlConfigurationProvider.java:1027)
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadDocuments(XmlConfigurationProvider.java:167)
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.init(XmlConfigurationProvider.java:134)
+	at com.opensymphony.xwork2.config.impl.DefaultConfiguration.reloadContainer(DefaultConfiguration.java:239)
+	at com.opensymphony.xwork2.config.ConfigurationManager.reloadProviders(ConfigurationManager.java:235)
+	at com.opensymphony.xwork2.config.ConfigurationManager.conditionalReload(ConfigurationManager.java:184)
+	at com.opensymphony.xwork2.config.ConfigurationManager.getConfiguration(ConfigurationManager.java:73)
+	at org.apache.struts2.dispatcher.Dispatcher.getContainer(Dispatcher.java:967)
+	at org.apache.struts2.dispatcher.ng.PrepareOperations.createActionContext(PrepareOperations.java:80)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:89)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: 元素类型 "action" 必须由匹配的结束标记 "</action>" 终止。 - file:/C:/vote/InnovationVote/WEB-INF/struts.xml:43:7
+	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:119)
+	at com.opensymphony.xwork2.config.providers.XmlConfigurationProvider.loadConfigurationFiles(XmlConfigurationProvider.java:1021)
+	... 26 more
+Caused by: org.xml.sax.SAXParseException; systemId: file:/C:/vote/InnovationVote/WEB-INF/struts.xml; lineNumber: 43; columnNumber: 7; 元素类型 "action" 必须由匹配的结束标记 "</action>" 终止。
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:203)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:177)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:441)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:368)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1436)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1749)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2973)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:606)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:117)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:510)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:848)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:777)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:141)
+	at com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser.parse(AbstractSAXParser.java:1213)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser.parse(SAXParserImpl.java:649)
+	at com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl.parse(SAXParserImpl.java:333)
+	at com.opensymphony.xwork2.util.DomHelper.parse(DomHelper.java:117)
+	... 27 more
+
+五月 16, 2015 10:22:41 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [An exception occurred processing JSP page /test.jsp at line 18
+
+15: 	 		Date date = new Date(); 
+16:       int a=0;
+17: 
+18: 	 		List list = new FunVoteRecord().VoteDelete(l,u);
+19: 	 		VoteRecord v = (VoteRecord)list.get(0);
+20: 	 		out.print(v.getProjectID());
+21: 	 		out.print(list.size());
+
+
+Stacktrace:] with root cause
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at db.fun.FunVoteRecord.VoteDelete(FunVoteRecord.java:85)
+	at org.apache.jsp.test_jsp._jspService(test_jsp.java:83)
+	at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:70)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:432)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:316)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2015 11:49:49 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [/zhuzhuangtu.jsp (line: 51, column: 0) Unterminated &lt;s:form tag] with root cause
+org.apache.jasper.JasperException: /zhuzhuangtu.jsp (line: 51, column: 0) Unterminated &lt;s:form tag
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:443)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:133)
+	at org.apache.jasper.compiler.Parser.parseBody(Parser.java:1660)
+	at org.apache.jasper.compiler.Parser.parseOptionalBody(Parser.java:986)
+	at org.apache.jasper.compiler.Parser.parseCustomTag(Parser.java:1258)
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1435)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:242)
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:102)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:199)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2015 11:51:23 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [/zhuzhuangtu.jsp (line: 52, column: 0) Unterminated &lt;s:form tag] with root cause
+org.apache.jasper.JasperException: /zhuzhuangtu.jsp (line: 52, column: 0) Unterminated &lt;s:form tag
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:443)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:133)
+	at org.apache.jasper.compiler.Parser.parseBody(Parser.java:1660)
+	at org.apache.jasper.compiler.Parser.parseOptionalBody(Parser.java:986)
+	at org.apache.jasper.compiler.Parser.parseCustomTag(Parser.java:1258)
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1435)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:242)
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:102)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:199)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2015 11:51:25 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.zhuzhuangtu_jsp] with root cause
+java.lang.ClassNotFoundException: org.apache.jsp.zhuzhuangtu_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:132)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:63)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:121)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2015 11:51:26 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.zhuzhuangtu_jsp] with root cause
+java.lang.ClassNotFoundException: org.apache.jsp.zhuzhuangtu_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:132)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:63)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:121)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2015 11:51:28 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [/zhuzhuangtu.jsp (line: 52, column: 0) Unterminated &lt;s:form tag] with root cause
+org.apache.jasper.JasperException: /zhuzhuangtu.jsp (line: 52, column: 0) Unterminated &lt;s:form tag
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:443)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:133)
+	at org.apache.jasper.compiler.Parser.parseBody(Parser.java:1660)
+	at org.apache.jasper.compiler.Parser.parseOptionalBody(Parser.java:986)
+	at org.apache.jasper.compiler.Parser.parseCustomTag(Parser.java:1258)
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1435)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:242)
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:102)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:199)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2015 11:51:28 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.zhuzhuangtu_jsp] with root cause
+java.lang.ClassNotFoundException: org.apache.jsp.zhuzhuangtu_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:132)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:63)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:121)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2015 11:51:29 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.zhuzhuangtu_jsp] with root cause
+java.lang.ClassNotFoundException: org.apache.jsp.zhuzhuangtu_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:132)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:63)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:121)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2015 11:51:30 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [java.lang.ClassNotFoundException: org.apache.jsp.zhuzhuangtu_jsp] with root cause
+java.lang.ClassNotFoundException: org.apache.jsp.zhuzhuangtu_jsp
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:132)
+	at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:63)
+	at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:121)
+	at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:172)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:369)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2015 11:51:32 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [/zhuzhuangtu.jsp (line: 52, column: 0) Unterminated &lt;s:form tag] with root cause
+org.apache.jasper.JasperException: /zhuzhuangtu.jsp (line: 52, column: 0) Unterminated &lt;s:form tag
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:443)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:133)
+	at org.apache.jasper.compiler.Parser.parseBody(Parser.java:1660)
+	at org.apache.jasper.compiler.Parser.parseOptionalBody(Parser.java:986)
+	at org.apache.jasper.compiler.Parser.parseCustomTag(Parser.java:1258)
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1435)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:242)
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:102)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:199)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2015 11:52:05 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [/zhuzhuangtu.jsp (line: 52, column: 0) Unterminated &lt;s:form tag] with root cause
+org.apache.jasper.JasperException: /zhuzhuangtu.jsp (line: 52, column: 0) Unterminated &lt;s:form tag
+	at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:42)
+	at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:443)
+	at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:133)
+	at org.apache.jasper.compiler.Parser.parseBody(Parser.java:1660)
+	at org.apache.jasper.compiler.Parser.parseOptionalBody(Parser.java:986)
+	at org.apache.jasper.compiler.Parser.parseCustomTag(Parser.java:1258)
+	at org.apache.jasper.compiler.Parser.parseElements(Parser.java:1435)
+	at org.apache.jasper.compiler.Parser.parse(Parser.java:138)
+	at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:242)
+	at org.apache.jasper.compiler.ParserController.parse(ParserController.java:102)
+	at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:199)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:374)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2015 11:56:04 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 36 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+33: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+34: 		  		var data = 
+35: 		  		{
+36: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+37: 		  			datasets : [
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+An error occurred at line: 41 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+38: 		  			{
+39: 						fillColor : "rgba(255,0,0,0.5)",
+40: 						strokeColor : "rgba(255,255,255,1)",
+41: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+42: 						}
+43: 			     	]
+44: 			    }
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+五月 16, 2015 11:57:29 下午 org.apache.catalina.core.StandardWrapperValve invoke
+严重: Servlet.service() for servlet [jsp] in context with path [] threw exception [Unable to compile class for JSP: 
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+Stacktrace:] with root cause
+org.apache.jasper.JasperException: Unable to compile class for JSP: 
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 35 in the jsp file: /zhuzhuangtu.jsp
+mydata.name cannot be resolved to a type
+32: 		  		var ctx = document.getElementById("myChart").getContext("2d");
+33: 		  		var data = 
+34: 		  		{
+35: 		  			labels : ["<%=mydata.name[0]%>","<%=mydata.name[1]%>","<%=mydata.name[2]%>","<%=mydata.name[3]%>","<%=mydata.name[4]%>","<%=mydata.name[5]%>","<%=mydata.name[6]%>","<%=mydata.name[7]%>","<%=mydata.name[8]%>","<%=mydata.name[9]%>"],
+36: 		  			datasets : [
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+An error occurred at line: 40 in the jsp file: /zhuzhuangtu.jsp
+mydata.votenum cannot be resolved to a type
+37: 		  			{
+38: 						fillColor : "rgba(255,0,0,0.5)",
+39: 						strokeColor : "rgba(255,255,255,1)",
+40: 						data : ["<%=mydata.votenum[0]%>","<%=mydata.votenum[1]%>","<%=mydata.votenum[2]%>","<%=mydata.votenum[3]%>","<%=mydata.votenum[4]%>","<%=mydata.votenum[5]%>","<%=mydata.votenum[6]%>","<%=mydata.votenum[7]%>","<%=mydata.votenum[8]%>","<%=mydata.votenum[9]%>"]
+41: 						}
+42: 			     	]
+43: 			    }
+
+
+Stacktrace:
+	at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:103)
+	at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:366)
+	at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:485)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:379)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:354)
+	at org.apache.jasper.compiler.Compiler.compile(Compiler.java:341)
+	at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:657)
+	at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:357)
+	at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:395)
+	at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:339)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter.doFilter(StrutsPrepareAndExecuteFilter.java:96)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:220)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:122)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:170)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:950)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:421)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1074)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:611)
+	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:314)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+

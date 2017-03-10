@@ -1,0 +1,74 @@
+$(document).ready(function() {
+    // 抽奖相关
+    $('.success,.fail,.enough,.hassucceed,.logerror').hide();
+  $('#lottery-modal button:last').on('click', function() {
+    var username = $('#lottery-user input').val(),
+      password = $('#lottery-psw input').val();
+      $('#lottery-modal').modal('hide');
+      $('.alert-danger').hide();
+      $.post('/lottery.action', {
+        username: username,
+        password: password,
+      }, function(data) {
+        var data = JSON.parse(data);
+        if (data.status == "success") {
+          $('.success').show();
+          $('.fail').hide();
+          $('#lo-result').html(data.award);
+          $('#lottery-result').modal('show');
+          $('.closeUp').hide();
+          $('.lotteryUp').show();
+        } else if (data.status == "fail") {
+          $('.fail').show();
+          $('.success').hide();
+          $('#lottery-result').modal('show');
+          $('.closeUp').show();
+          $('.lotteryUp').hide();
+        } else if (data.status == "enough") {
+        	$('.enough').show();
+          $('.success').hide();
+          $('#lottery-result').modal('show');
+          $('.closeUp').show();
+          $('.lotteryUp').hide();
+        } else if (data.status == "hassucceed") {
+        	$('.hassucceed').show();
+          $('.success').hide();
+          $('#lottery-result').modal('show');
+          $('.closeUp').show();
+          $('.lotteryUp').hide();
+        } else if (data.status == "logerror"){
+        	$('.logerror').show();
+          $('.success').hide();
+          $('#lottery-result').modal('show');
+          $('.closeUp').show();
+          $('.lotteryUp').hide();
+        };
+      })
+  })
+
+  $('#lottery-modal,#lottery-result').on('hidden.bs.modal',function(e){
+    $('.success,.fail,.enough,.hassucceed,.logerror').hide();
+    $('.address input').val('');
+    $('.name input').val('');
+    $('.phone input').val('');
+  });
+
+  $('.lotteryUp').on('click', function() {
+  	var address = $('.address input').val();
+  	var username = $('.name input').val();
+  	var phone = $('.phone input').val();
+    $.post('/address.action',{address:address,username:username,phone:phone},function(data){
+    	if (data == "success"){
+    		alert('恭喜你，提交成功！')
+    	}
+    }).error(function(){
+    	alert('很抱歉，提交失败！请到工作人员处咨询！！');
+    })
+    $('#lottery-result').modal('hide');
+    
+  })
+
+  $('.closeUp').on('click', function() {
+    $('#lottery-check input').val('');
+  })
+})

@@ -1,0 +1,273 @@
+﻿<%@ page language="java" import="java.util.*, db.fun.*,db.pojo.*" pageEncoding="UTF-8" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ page import="struts.ShowProjectOnlyAction" %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<% String path=request.getContextPath(); String basePath=request.getScheme()+ "://"+request.getServerName()+ ":"+request.getServerPort()+path+ "/"; %>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>大创展投票系统</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <!-- simple style -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/projectDetail.css">
+  <style type="text/css">
+  body {
+    background-color: #f6f6f6;
+  }
+
+  #logo-text,
+  #login {
+    color: #ffffff;
+    font-size: 20px;
+  }
+
+  #logo {
+    padding-top: 5px;
+  }
+  </style>
+  <script src="http://apps.bdimg.com/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/mock.js"></script>
+</head>
+
+<body>
+  <!-- Fixed navbar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" id="logo" href="index.jsp"><img src="images/logo.png" weight="48px" height="48px" /></a>
+    </div>
+    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#" onclick="window.location.href='projectSearch.action'">所有项目</a></li>
+        <li><a href="#" data-toggle="modal" data-target="#lottery-modal">我要抽奖</a></li>
+        <!--<li><a href="#">项目列表</a></li>-->
+      </ul>
+      <form class="navbar-form navbar-left" role="search" action="project" method="POST">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="搜索项目ID" name="projectID">
+          <button type="submit" class="btn btn-default">走你</button>
+        </div>
+      </form>
+      <ul class="nav navbar-nav navbar-right" style="margin-right: 20px">
+        <li><a href="login.jsp" id="login">我要提交项目</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--project-detail-->
+  <div class="container" id="project-detail">
+    <div class="row">
+      <div class="col-md-8 project-detail-img-box">
+      	<span class="detail-img-src" style="display: none"><s:property value="#request.project.ProjectImage"/></span>
+        <img src="" alt="" class="img-responsive" style="width: 100%;">
+      </div>
+      <div class="col-md-4">
+        <h1 class="project-title"><s:property value="#request.project.projectName" /></h1>
+        <div class="partner">
+          <p><span class="label label-primary">项目负责人</span>&nbsp;<span class="main-partner"><s:property value="#request.project.LeaderName"/></span</p>
+          <p><span class="label label-primary">项目成员</span>&nbsp;<span class="other-partner"><s:property value="#request.project.ProjectMembers"/></span></p>
+          <p><span class="label label-primary">项目类别</span>&nbsp;<span class="other-partner"><s:property value="#request.project.ProjectType"/></span></p>
+        </div>
+        <p class="project-introduction">
+            <span class="label label-primary">项目简介</span>
+            <p class="project-introduction"><s:property value="#request.project.ProjectIntroduction"/></p>
+        </p>
+        <div class="vote-box" data-toggle="modal" data-target="#vote-modal">
+          <span class="glyphicon glyphicon-heart-empty vote-heart" aria-hidden="true"></span>
+          <span class="vote">投票</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--vote-modal-->
+  <div class="modal fade" id="vote-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            &times;
+          </button>
+            <h4 class="modal-title" id="myModalLabel">
+              投票
+           </h4>
+        </div>
+        <div class="modal-body" style="overflow: hidden">
+          <div class="col-lg-12">
+            <form id="form" class="form-horizontal" role="form">
+              <div class="input-group" style="opacity: 0">
+                  <input type="text" class="form-control" value="<s:property value="#request.project.ProjectID"/>" name="ProjectID" readonly="readonly"  id="ProjectID"/>                                       
+              </div>
+              <div id="vote-user" class="form-group">
+                <label class="col-sm-2 control-label">学号</label>
+                <div class="col-sm-10">
+                  <input class="textin form-control" type="text" placeholder="学号"  aria-describedby="sno-attention"  name="userNo">
+                  <span id="sno-attention" class="help-block">注意只能刷卡后才能进行投票</span>
+                </div>
+              </div>
+              <div id="vote-psw" class="form-group">
+                <label class="col-sm-2 control-label">密码</label>
+                <div class="col-sm-10">
+                  <input class="textin form-control" type="text" placeholder="密码" aria-describedby="psw-attention"  name="password">
+                  <span id="psw-attention" class="help-block">密码为学号后六位</span>
+                </div>
+              </div>
+              <div class="col-sm-12 alert alert-danger" role="alert" id="vote-attention">
+                   输入不允许为空
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+          </button>
+          <button  type="button" class="btn btn-primary" data-toggle="modal" id="vote-button">
+            投票
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--lottery-modal-->
+  <div class="modal fade" id="lottery-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            &times;
+          </button>
+          <h4 class="modal-title" id="myModalLabel">
+            抽奖
+         </h4>
+        </div>
+          <div class="modal-body" style="overflow: hidden">
+            <div class="col-lg-12">
+              <form id="form" class="form-horizontal" role="form">
+                <div id="lottery-user" class="form-group">
+                  <label class="col-sm-2 control-label">用户名</label>
+                  <div class="col-sm-10">
+                    <input class="textin form-control" type="text" placeholder="用户名">
+                  </div>
+                </div>
+                <div id="lottery-psw" class="form-group">
+                  <label class="col-sm-2 control-label">密码</label>
+                  <div class="col-sm-10">
+                    <input class="textin form-control" type="text" placeholder="密码为学号后六位">
+                  </div>
+                </div>
+                <!--<div id="lottery-check" class="form-group">
+                  <label class="col-sm-2 control-label">验证码</label>
+                  <div class="col-sm-8">
+                    <input class="textin form-control" type="text" placeholder="验证码">
+                  </div>
+                  <div class="col-sm-2"><img src="" style="width: 100%"></div>
+                </div>-->
+              </form>
+            </div>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+          </button>
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#lottery-result">
+            抽奖
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--lottery-result-->
+  <div class="modal fade" id="lottery-result" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+            &times;
+          </button>
+          <h4 class="modal-title" id="myModalLabel">
+            抽奖结果
+         </h4>
+        </div>
+          <div class="modal-body" style="overflow: hidden">
+            <div class="col-lg-12 success">
+                <div>
+                  恭喜你抽中<span id="lo-result"></span>等奖!
+                </div>
+                <label class="col-sm-4 address-lab">请填写你的姓名：</label>
+                <div class="col-sm-8 name">
+                    <input class="textin form-control" type="text" placeholder="你的姓名">
+                </div>
+                <label class="col-sm-4 address-lab">请填写收货地址：</label>
+                <div class="col-sm-8 address">
+                    <input class="textin form-control" type="text" placeholder="收货地址">
+                </div>
+               
+                <label class="col-sm-4 address-lab">请填写你的电话：</label>
+                <div class="col-sm-8 phone">
+                    <input class="textin form-control" type="text" placeholder="你的电话">
+                </div>
+                <div style="color: red;">
+                  请认真填写，只有这一次机会！
+                </div>
+            </div>
+            <div class="fail">
+              很遗憾你没抽中，再接再厉~
+            </div>
+            <div class="enough">
+              你必须再投票才能获得抽奖机会或者是你的抽奖次数已达上限10次，不能再抽奖啦！
+            </div>
+            <div class="hassucceed">
+            	你已经中过奖啦！不能再抽了！ 
+            </div>
+            <div class="logerror">
+            	抱歉登录异常！请检查用户名和密码是否正确！
+            </div>
+          </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default closeUp" data-dismiss="modal">关闭
+          </button>
+          <button type="button" class="btn btn-default lotteryUp">提交
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/projectDetail.js"></script>
+  <script src="js/index.js"></script>
+    <script>
+  	$(function(){
+  			/*var length = $(".project-detail-img-box").find("img").length;
+				for(var i = 0;i<length;i++){
+				   var re = "file:///C:/vote/InnovationVote/";
+				   var src = $(".project-detail-img-box").find("img")[i].src;
+				   $(".project-detail-img-box").find("img")[i].src = src.replace(re,"")
+				}*/
+				
+			  var src = $(".detail-img-src").text();
+				var re = "C:\\vote\\InnovationVote\\";
+				src = src.replace(re,"");
+				$(".project-detail-img-box").find("img")[0].src = src;
+						
+						
+						
+				var rr = /picture/;
+			  var src = $(".project-detail-img-box").find("img")[0].src;
+			  if(!rr.test(src))
+				  $(".project-detail-img-box").find("img")[0].src = "/images/logo.png";
+				}
+  	)
+  	</script>
+</body>
+</html>
